@@ -27,14 +27,19 @@ class DirectEvidenceComputer:
         
         # Aggregate DILI evidence per target
         direct_evidence = drug_target_df.groupby('ot_target_symbol').agg({
-            'fda_drug_name': 'count',  # Number of drugs targeting this target
+            'fda_drug_name': 'nunique',  # Number of unique drugs targeting this target
             'dili_severity_weight': 'sum',  # Sum of DILI severity weights
-            'fda_dili_concern': lambda x: (x == 'Most-DILI-Concern').sum()  # High-risk drug count
         }).rename(columns={
             'fda_drug_name': 'drug_count',
             'dili_severity_weight': 'total_dili_weight',
-            'fda_dili_concern': 'high_risk_drug_count'
         })
+        
+        # Calculate high-risk drug count (unique drugs that are high-risk)
+        high_risk_counts = drug_target_df[
+            drug_target_df['fda_dili_concern'] == 'Most-DILI-Concern'
+        ].groupby('ot_target_symbol')['fda_drug_name'].nunique()
+        
+        direct_evidence['high_risk_drug_count'] = high_risk_counts.fillna(0)
         
         # Add derived features
         direct_evidence['dili_risk_ratio'] = (

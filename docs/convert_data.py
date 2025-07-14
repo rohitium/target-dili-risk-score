@@ -26,7 +26,7 @@ def convert_data():
             'target_symbol': row['ot_target_symbol'],
             'drug_count': int(row['drug_count']),
             'total_dili_weight': float(row['total_dili_weight']),
-            'high_risk_drug_count': int(row['high_risk_drug_count']),
+            'high_risk_drug_count': int(row['high_risk_drug_count']) if pd.notna(row['high_risk_drug_count']) else 0,
             'dili_risk_ratio': float(row['dili_risk_ratio']),
             'avg_dili_weight': float(row['avg_dili_weight']),
             'network_dili_score': float(row['network_dili_score']),
