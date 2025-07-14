@@ -46,11 +46,25 @@ def generate_validation_report(validation_df, output_path):
         report_lines.append("")
         report_lines.append("TOP 10 HIGHEST DILI RISK TARGETS")
         report_lines.append("-" * 30)
-        top_risk = validation_df.nlargest(10, 'dili_risk_score')[
-            ['dili_risk_score', 'risk_category', 'approval_rate', 'total_drugs']
-        ]
-        for idx, row in top_risk.iterrows():
-            report_lines.append(f"{idx}: {row['dili_risk_score']:.3f} ({row['risk_category']}) - Approval: {row['approval_rate']:.3f} ({row['total_drugs']} drugs)")
+        top_risk = validation_df.nlargest(10, 'dili_risk_score')
+        
+        # Select columns for display
+        display_cols = ['dili_risk_score', 'risk_category', 'total_drugs']
+        if 'approval_rate' in top_risk.columns:
+            display_cols.append('approval_rate')
+        if 'withdrawal_rate' in top_risk.columns:
+            display_cols.append('withdrawal_rate')
+        
+        top_risk_display = top_risk[display_cols]
+        
+        for idx, row in top_risk_display.iterrows():
+            target_name = idx if isinstance(idx, str) else f"Target_{idx}"
+            line = f"{target_name}: {row['dili_risk_score']:.3f} ({row['risk_category']}) - "
+            line += f"Approval: {row['approval_rate']:.3f} " if 'approval_rate' in row else "Approval: N/A "
+            line += f"Withdrawal: {row['withdrawal_rate']:.3f} " if 'withdrawal_rate' in row else "Withdrawal: N/A "
+            line += f"({row['total_drugs']} drugs)"
+            report_lines.append(line)
+    
     with open(output_path, 'w') as f:
         f.write('\n'.join(report_lines))
     logger.info(f"Validation report saved to {output_path}") 

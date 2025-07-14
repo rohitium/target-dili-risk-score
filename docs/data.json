@@ -2,12 +2,12 @@
   {
     "target_symbol": "ABCC9",
     "drug_count": 3,
-    "total_dili_weight": 6.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 2.0,
+    "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0004389815627743635,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -24,23 +24,23 @@
   {
     "target_symbol": "ACE",
     "drug_count": 6,
-    "total_dili_weight": 743.0,
+    "total_dili_weight": 5.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.16666666666666666,
-    "avg_dili_weight": 123.83333333333333,
+    "avg_dili_weight": 0.8333333333333334,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.05436055019022534,
+    "dili_risk_score": 0.1724137931034483,
     "risk_category": "Low"
   },
   {
     "target_symbol": "ACHE",
     "drug_count": 2,
-    "total_dili_weight": 126.0,
+    "total_dili_weight": 3.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.5,
-    "avg_dili_weight": 63.0,
+    "avg_dili_weight": 1.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.009218612818261633,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
@@ -51,7 +51,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -62,7 +62,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -112,155 +112,155 @@
   {
     "target_symbol": "ADORA1",
     "drug_count": 8,
-    "total_dili_weight": 56.0,
+    "total_dili_weight": 8.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.375,
-    "avg_dili_weight": 7.0,
+    "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.004097161252560726,
+    "dili_risk_score": 0.27586206896551724,
     "risk_category": "Low"
   },
   {
     "target_symbol": "ADORA2A",
     "drug_count": 8,
-    "total_dili_weight": 56.0,
+    "total_dili_weight": 8.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.375,
-    "avg_dili_weight": 7.0,
+    "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.004097161252560726,
+    "dili_risk_score": 0.27586206896551724,
     "risk_category": "Low"
   },
   {
     "target_symbol": "ADORA2B",
     "drug_count": 8,
-    "total_dili_weight": 56.0,
+    "total_dili_weight": 8.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.375,
-    "avg_dili_weight": 7.0,
+    "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.004097161252560726,
+    "dili_risk_score": 0.27586206896551724,
     "risk_category": "Low"
   },
   {
     "target_symbol": "ADORA3",
     "drug_count": 8,
-    "total_dili_weight": 56.0,
+    "total_dili_weight": 8.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.375,
-    "avg_dili_weight": 7.0,
+    "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.004097161252560726,
+    "dili_risk_score": 0.27586206896551724,
     "risk_category": "Low"
   },
   {
     "target_symbol": "ADRA1A",
     "drug_count": 12,
-    "total_dili_weight": 386.0,
+    "total_dili_weight": 9.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.25,
-    "avg_dili_weight": 32.166666666666664,
+    "avg_dili_weight": 0.75,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.028241147205150717,
+    "dili_risk_score": 0.3103448275862069,
     "risk_category": "Low"
   },
   {
     "target_symbol": "ADRA1B",
     "drug_count": 12,
-    "total_dili_weight": 386.0,
+    "total_dili_weight": 9.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.25,
-    "avg_dili_weight": 32.166666666666664,
+    "avg_dili_weight": 0.75,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.028241147205150717,
+    "dili_risk_score": 0.3103448275862069,
     "risk_category": "Low"
   },
   {
     "target_symbol": "ADRA1D",
     "drug_count": 12,
-    "total_dili_weight": 386.0,
+    "total_dili_weight": 9.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.25,
-    "avg_dili_weight": 32.166666666666664,
+    "avg_dili_weight": 0.75,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.028241147205150717,
+    "dili_risk_score": 0.3103448275862069,
     "risk_category": "Low"
   },
   {
     "target_symbol": "ADRA2A",
     "drug_count": 14,
-    "total_dili_weight": 144.0,
+    "total_dili_weight": 13.0,
     "high_risk_drug_count": 5,
     "dili_risk_ratio": 0.35714285714285715,
-    "avg_dili_weight": 10.285714285714286,
+    "avg_dili_weight": 0.9285714285714286,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.010535557506584723,
-    "risk_category": "Low"
+    "dili_risk_score": 0.4482758620689655,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "ADRA2B",
     "drug_count": 14,
-    "total_dili_weight": 144.0,
+    "total_dili_weight": 13.0,
     "high_risk_drug_count": 5,
     "dili_risk_ratio": 0.35714285714285715,
-    "avg_dili_weight": 10.285714285714286,
+    "avg_dili_weight": 0.9285714285714286,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.010535557506584723,
-    "risk_category": "Low"
+    "dili_risk_score": 0.4482758620689655,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "ADRA2C",
     "drug_count": 14,
-    "total_dili_weight": 144.0,
+    "total_dili_weight": 13.0,
     "high_risk_drug_count": 5,
     "dili_risk_ratio": 0.35714285714285715,
-    "avg_dili_weight": 10.285714285714286,
+    "avg_dili_weight": 0.9285714285714286,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.010535557506584723,
-    "risk_category": "Low"
+    "dili_risk_score": 0.4482758620689655,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "ADRB1",
     "drug_count": 14,
-    "total_dili_weight": 784.0,
+    "total_dili_weight": 12.0,
     "high_risk_drug_count": 4,
     "dili_risk_ratio": 0.2857142857142857,
-    "avg_dili_weight": 56.0,
+    "avg_dili_weight": 0.8571428571428571,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.05736025753585016,
-    "risk_category": "Low"
+    "dili_risk_score": 0.41379310344827586,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "ADRB2",
     "drug_count": 13,
-    "total_dili_weight": 299.0,
+    "total_dili_weight": 10.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.23076923076923078,
-    "avg_dili_weight": 23.0,
+    "avg_dili_weight": 0.7692307692307693,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.021875914544922447,
-    "risk_category": "Low"
+    "dili_risk_score": 0.3448275862068966,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "ADRB3",
     "drug_count": 10,
-    "total_dili_weight": 268.0,
+    "total_dili_weight": 9.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.3,
-    "avg_dili_weight": 26.8,
+    "avg_dili_weight": 0.9,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0196078431372549,
+    "dili_risk_score": 0.3103448275862069,
     "risk_category": "Low"
   },
   {
     "target_symbol": "AGTR1",
     "drug_count": 8,
-    "total_dili_weight": 804.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.125,
-    "avg_dili_weight": 100.5,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.058823529411764705,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -304,7 +304,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -326,18 +326,18 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
     "target_symbol": "AR",
     "drug_count": 9,
-    "total_dili_weight": 19.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 2.111111111111111,
+    "avg_dili_weight": 0.2222222222222222,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0013901082821188176,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -348,7 +348,7 @@
     "dili_risk_ratio": 0.2,
     "avg_dili_weight": 0.6,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.00021949078138718174,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
@@ -365,12 +365,12 @@
   {
     "target_symbol": "BCHE",
     "drug_count": 1,
-    "total_dili_weight": 8.0,
+    "total_dili_weight": 1.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 8.0,
+    "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000585308750365818,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -497,45 +497,45 @@
   {
     "target_symbol": "CACNA1C",
     "drug_count": 6,
-    "total_dili_weight": 637.0,
+    "total_dili_weight": 3.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 106.16666666666667,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.046605209247878254,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
     "target_symbol": "CACNA1D",
     "drug_count": 6,
-    "total_dili_weight": 637.0,
+    "total_dili_weight": 3.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 106.16666666666667,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.046605209247878254,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
     "target_symbol": "CACNA1F",
     "drug_count": 6,
-    "total_dili_weight": 637.0,
+    "total_dili_weight": 3.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 106.16666666666667,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.046605209247878254,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
     "target_symbol": "CACNA1S",
     "drug_count": 6,
-    "total_dili_weight": 637.0,
+    "total_dili_weight": 3.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 106.16666666666667,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.046605209247878254,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
@@ -579,7 +579,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.16666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -739,67 +739,67 @@
   {
     "target_symbol": "CHRM1",
     "drug_count": 4,
-    "total_dili_weight": 8.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.25,
-    "avg_dili_weight": 2.0,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000585308750365818,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "CHRM2",
     "drug_count": 1,
-    "total_dili_weight": 8.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 1.0,
-    "avg_dili_weight": 8.0,
+    "avg_dili_weight": 2.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000585308750365818,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "CHRM3",
     "drug_count": 4,
-    "total_dili_weight": 8.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.25,
-    "avg_dili_weight": 2.0,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000585308750365818,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "CHRNA3",
     "drug_count": 3,
-    "total_dili_weight": 4.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 1.3333333333333333,
+    "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "CHRNB4",
     "drug_count": 3,
-    "total_dili_weight": 4.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 1.3333333333333333,
+    "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "CLCN2",
     "drug_count": 6,
-    "total_dili_weight": 40.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.16666666666666666,
-    "avg_dili_weight": 6.666666666666667,
+    "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0029265437518290896,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -838,12 +838,12 @@
   {
     "target_symbol": "CSF3R",
     "drug_count": 8,
-    "total_dili_weight": 21.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.125,
-    "avg_dili_weight": 2.625,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0015364354697102723,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -904,12 +904,12 @@
   {
     "target_symbol": "CYP17A1",
     "drug_count": 2,
-    "total_dili_weight": 8.0,
+    "total_dili_weight": 1.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 4.0,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000585308750365818,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -926,45 +926,45 @@
   {
     "target_symbol": "CYP3A4",
     "drug_count": 5,
-    "total_dili_weight": 9.0,
+    "total_dili_weight": 3.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.2,
-    "avg_dili_weight": 1.8,
+    "avg_dili_weight": 0.6,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0006584723441615452,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
     "target_symbol": "CYP3A43",
     "drug_count": 5,
-    "total_dili_weight": 9.0,
+    "total_dili_weight": 3.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.2,
-    "avg_dili_weight": 1.8,
+    "avg_dili_weight": 0.6,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0006584723441615452,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
     "target_symbol": "CYP3A5",
     "drug_count": 5,
-    "total_dili_weight": 9.0,
+    "total_dili_weight": 3.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.2,
-    "avg_dili_weight": 1.8,
+    "avg_dili_weight": 0.6,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0006584723441615452,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
     "target_symbol": "CYP3A7",
     "drug_count": 5,
-    "total_dili_weight": 9.0,
+    "total_dili_weight": 3.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.2,
-    "avg_dili_weight": 1.8,
+    "avg_dili_weight": 0.6,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0006584723441615452,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
@@ -981,12 +981,12 @@
   {
     "target_symbol": "DHFR",
     "drug_count": 7,
-    "total_dili_weight": 8.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 2,
     "dili_risk_ratio": 0.2857142857142857,
-    "avg_dili_weight": 1.1428571428571428,
+    "avg_dili_weight": 0.5714285714285714,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000585308750365818,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -1014,12 +1014,12 @@
   {
     "target_symbol": "DPEP1",
     "drug_count": 6,
-    "total_dili_weight": 27.0,
+    "total_dili_weight": 3.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.16666666666666666,
-    "avg_dili_weight": 4.5,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.001975417032484636,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
@@ -1041,62 +1041,62 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0001463271875914545,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "DRD2",
     "drug_count": 15,
-    "total_dili_weight": 1843.0,
+    "total_dili_weight": 11.0,
     "high_risk_drug_count": 4,
     "dili_risk_ratio": 0.26666666666666666,
-    "avg_dili_weight": 122.86666666666666,
+    "avg_dili_weight": 0.7333333333333333,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.1348405033655253,
-    "risk_category": "Low"
+    "dili_risk_score": 0.3793103448275862,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "DRD3",
     "drug_count": 11,
-    "total_dili_weight": 612.0,
+    "total_dili_weight": 8.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.2727272727272727,
-    "avg_dili_weight": 55.63636363636363,
+    "avg_dili_weight": 0.7272727272727273,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.04477611940298507,
+    "dili_risk_score": 0.27586206896551724,
     "risk_category": "Low"
   },
   {
     "target_symbol": "DRD4",
     "drug_count": 11,
-    "total_dili_weight": 606.0,
+    "total_dili_weight": 8.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.2727272727272727,
-    "avg_dili_weight": 55.09090909090909,
+    "avg_dili_weight": 0.7272727272727273,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.04433713784021071,
+    "dili_risk_score": 0.27586206896551724,
     "risk_category": "Low"
   },
   {
     "target_symbol": "EDNRA",
     "drug_count": 3,
-    "total_dili_weight": 10.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 3.3333333333333335,
+    "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0007316359379572724,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "EDNRB",
     "drug_count": 3,
-    "total_dili_weight": 10.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 3.3333333333333335,
+    "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0007316359379572724,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -1355,23 +1355,23 @@
   {
     "target_symbol": "ESR1",
     "drug_count": 6,
-    "total_dili_weight": 13.0,
+    "total_dili_weight": 3.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.16666666666666666,
-    "avg_dili_weight": 2.1666666666666665,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0009511267193444542,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
     "target_symbol": "ESR2",
     "drug_count": 12,
-    "total_dili_weight": 6.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.08333333333333333,
-    "avg_dili_weight": 0.5,
+    "avg_dili_weight": 0.3333333333333333,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0004389815627743635,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -1404,7 +1404,7 @@
     "dili_risk_ratio": 0.3333333333333333,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.00021949078138718174,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
@@ -1443,34 +1443,34 @@
   {
     "target_symbol": "FAAH",
     "drug_count": 10,
-    "total_dili_weight": 4581.0,
+    "total_dili_weight": 9.0,
     "high_risk_drug_count": 4,
     "dili_risk_ratio": 0.4,
-    "avg_dili_weight": 458.1,
+    "avg_dili_weight": 0.9,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.33516242317822653,
-    "risk_category": "Medium"
+    "dili_risk_score": 0.3103448275862069,
+    "risk_category": "Low"
   },
   {
     "target_symbol": "FDPS",
     "drug_count": 2,
-    "total_dili_weight": 11.0,
+    "total_dili_weight": 1.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 5.5,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0008047995317529997,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
     "target_symbol": "FGF23",
     "drug_count": 2,
-    "total_dili_weight": 3.0,
+    "total_dili_weight": 1.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 1.5,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.00021949078138718174,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -1580,7 +1580,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -1597,12 +1597,12 @@
   {
     "target_symbol": "FSHR",
     "drug_count": 2,
-    "total_dili_weight": 4.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.5,
-    "avg_dili_weight": 2.0,
+    "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -1619,210 +1619,210 @@
   {
     "target_symbol": "GABRA1",
     "drug_count": 19,
-    "total_dili_weight": 673.0,
+    "total_dili_weight": 17.0,
     "high_risk_drug_count": 7,
     "dili_risk_ratio": 0.3684210526315789,
-    "avg_dili_weight": 35.421052631578945,
+    "avg_dili_weight": 0.8947368421052632,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.049239098624524434,
-    "risk_category": "Low"
+    "dili_risk_score": 0.5862068965517241,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "GABRA2",
     "drug_count": 19,
-    "total_dili_weight": 673.0,
+    "total_dili_weight": 17.0,
     "high_risk_drug_count": 7,
     "dili_risk_ratio": 0.3684210526315789,
-    "avg_dili_weight": 35.421052631578945,
+    "avg_dili_weight": 0.8947368421052632,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.049239098624524434,
-    "risk_category": "Low"
+    "dili_risk_score": 0.5862068965517241,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "GABRA3",
     "drug_count": 19,
-    "total_dili_weight": 673.0,
+    "total_dili_weight": 17.0,
     "high_risk_drug_count": 7,
     "dili_risk_ratio": 0.3684210526315789,
-    "avg_dili_weight": 35.421052631578945,
+    "avg_dili_weight": 0.8947368421052632,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.049239098624524434,
-    "risk_category": "Low"
+    "dili_risk_score": 0.5862068965517241,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "GABRA4",
     "drug_count": 6,
-    "total_dili_weight": 35.0,
+    "total_dili_weight": 7.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.5,
-    "avg_dili_weight": 5.833333333333333,
+    "avg_dili_weight": 1.1666666666666667,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0025607257828504535,
+    "dili_risk_score": 0.2413793103448276,
     "risk_category": "Low"
   },
   {
     "target_symbol": "GABRA5",
     "drug_count": 19,
-    "total_dili_weight": 673.0,
+    "total_dili_weight": 17.0,
     "high_risk_drug_count": 7,
     "dili_risk_ratio": 0.3684210526315789,
-    "avg_dili_weight": 35.421052631578945,
+    "avg_dili_weight": 0.8947368421052632,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.049239098624524434,
-    "risk_category": "Low"
+    "dili_risk_score": 0.5862068965517241,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "GABRA6",
     "drug_count": 6,
-    "total_dili_weight": 35.0,
+    "total_dili_weight": 7.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.5,
-    "avg_dili_weight": 5.833333333333333,
+    "avg_dili_weight": 1.1666666666666667,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0025607257828504535,
+    "dili_risk_score": 0.2413793103448276,
     "risk_category": "Low"
   },
   {
     "target_symbol": "GABRB1",
     "drug_count": 7,
-    "total_dili_weight": 297.0,
+    "total_dili_weight": 9.0,
     "high_risk_drug_count": 4,
     "dili_risk_ratio": 0.5714285714285714,
-    "avg_dili_weight": 42.42857142857143,
+    "avg_dili_weight": 1.2857142857142858,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.021729587357330993,
+    "dili_risk_score": 0.3103448275862069,
     "risk_category": "Low"
   },
   {
     "target_symbol": "GABRB2",
     "drug_count": 7,
-    "total_dili_weight": 37.0,
+    "total_dili_weight": 9.0,
     "high_risk_drug_count": 4,
     "dili_risk_ratio": 0.5714285714285714,
-    "avg_dili_weight": 5.285714285714286,
+    "avg_dili_weight": 1.2857142857142858,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.002707052970441908,
+    "dili_risk_score": 0.3103448275862069,
     "risk_category": "Low"
   },
   {
     "target_symbol": "GABRB3",
     "drug_count": 7,
-    "total_dili_weight": 37.0,
+    "total_dili_weight": 9.0,
     "high_risk_drug_count": 4,
     "dili_risk_ratio": 0.5714285714285714,
-    "avg_dili_weight": 5.285714285714286,
+    "avg_dili_weight": 1.2857142857142858,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.002707052970441908,
+    "dili_risk_score": 0.3103448275862069,
     "risk_category": "Low"
   },
   {
     "target_symbol": "GABRD",
     "drug_count": 6,
-    "total_dili_weight": 35.0,
+    "total_dili_weight": 7.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.5,
-    "avg_dili_weight": 5.833333333333333,
+    "avg_dili_weight": 1.1666666666666667,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0025607257828504535,
+    "dili_risk_score": 0.2413793103448276,
     "risk_category": "Low"
   },
   {
     "target_symbol": "GABRE",
     "drug_count": 6,
-    "total_dili_weight": 35.0,
+    "total_dili_weight": 7.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.5,
-    "avg_dili_weight": 5.833333333333333,
+    "avg_dili_weight": 1.1666666666666667,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0025607257828504535,
+    "dili_risk_score": 0.2413793103448276,
     "risk_category": "Low"
   },
   {
     "target_symbol": "GABRG1",
     "drug_count": 19,
-    "total_dili_weight": 673.0,
+    "total_dili_weight": 17.0,
     "high_risk_drug_count": 7,
     "dili_risk_ratio": 0.3684210526315789,
-    "avg_dili_weight": 35.421052631578945,
+    "avg_dili_weight": 0.8947368421052632,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.049239098624524434,
-    "risk_category": "Low"
+    "dili_risk_score": 0.5862068965517241,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "GABRG2",
     "drug_count": 19,
-    "total_dili_weight": 933.0,
+    "total_dili_weight": 17.0,
     "high_risk_drug_count": 7,
     "dili_risk_ratio": 0.3684210526315789,
-    "avg_dili_weight": 49.10526315789474,
+    "avg_dili_weight": 0.8947368421052632,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.06826163301141353,
-    "risk_category": "Low"
+    "dili_risk_score": 0.5862068965517241,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "GABRG3",
     "drug_count": 19,
-    "total_dili_weight": 673.0,
+    "total_dili_weight": 17.0,
     "high_risk_drug_count": 7,
     "dili_risk_ratio": 0.3684210526315789,
-    "avg_dili_weight": 35.421052631578945,
+    "avg_dili_weight": 0.8947368421052632,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.049239098624524434,
-    "risk_category": "Low"
+    "dili_risk_score": 0.5862068965517241,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "GABRP",
     "drug_count": 6,
-    "total_dili_weight": 35.0,
+    "total_dili_weight": 7.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.5,
-    "avg_dili_weight": 5.833333333333333,
+    "avg_dili_weight": 1.1666666666666667,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0025607257828504535,
+    "dili_risk_score": 0.2413793103448276,
     "risk_category": "Low"
   },
   {
     "target_symbol": "GABRQ",
     "drug_count": 6,
-    "total_dili_weight": 35.0,
+    "total_dili_weight": 7.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.5,
-    "avg_dili_weight": 5.833333333333333,
+    "avg_dili_weight": 1.1666666666666667,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0025607257828504535,
+    "dili_risk_score": 0.2413793103448276,
     "risk_category": "Low"
   },
   {
     "target_symbol": "GART",
     "drug_count": 3,
-    "total_dili_weight": 8.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 2,
     "dili_risk_ratio": 0.6666666666666666,
-    "avg_dili_weight": 2.6666666666666665,
+    "avg_dili_weight": 1.3333333333333333,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000585308750365818,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
     "target_symbol": "GLRA1",
     "drug_count": 5,
-    "total_dili_weight": 35.0,
+    "total_dili_weight": 7.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.6,
-    "avg_dili_weight": 7.0,
+    "avg_dili_weight": 1.4,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0025607257828504535,
+    "dili_risk_score": 0.2413793103448276,
     "risk_category": "Low"
   },
   {
     "target_symbol": "GNRHR",
     "drug_count": 10,
-    "total_dili_weight": 16.0,
+    "total_dili_weight": 3.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 1.6,
+    "avg_dili_weight": 0.3,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.001170617500731636,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
@@ -1927,79 +1927,79 @@
   {
     "target_symbol": "GRIN1",
     "drug_count": 14,
-    "total_dili_weight": 165.0,
+    "total_dili_weight": 13.0,
     "high_risk_drug_count": 5,
     "dili_risk_ratio": 0.35714285714285715,
-    "avg_dili_weight": 11.785714285714286,
+    "avg_dili_weight": 0.9285714285714286,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.012071992976294996,
-    "risk_category": "Low"
+    "dili_risk_score": 0.4482758620689655,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "GRIN2A",
     "drug_count": 15,
-    "total_dili_weight": 165.0,
+    "total_dili_weight": 13.0,
     "high_risk_drug_count": 5,
     "dili_risk_ratio": 0.3333333333333333,
-    "avg_dili_weight": 11.0,
+    "avg_dili_weight": 0.8666666666666667,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.012071992976294996,
-    "risk_category": "Low"
+    "dili_risk_score": 0.4482758620689655,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "GRIN2B",
     "drug_count": 14,
-    "total_dili_weight": 165.0,
+    "total_dili_weight": 13.0,
     "high_risk_drug_count": 5,
     "dili_risk_ratio": 0.35714285714285715,
-    "avg_dili_weight": 11.785714285714286,
+    "avg_dili_weight": 0.9285714285714286,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.012071992976294996,
-    "risk_category": "Low"
+    "dili_risk_score": 0.4482758620689655,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "GRIN2C",
     "drug_count": 14,
-    "total_dili_weight": 165.0,
+    "total_dili_weight": 13.0,
     "high_risk_drug_count": 5,
     "dili_risk_ratio": 0.35714285714285715,
-    "avg_dili_weight": 11.785714285714286,
+    "avg_dili_weight": 0.9285714285714286,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.012071992976294996,
-    "risk_category": "Low"
+    "dili_risk_score": 0.4482758620689655,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "GRIN2D",
     "drug_count": 14,
-    "total_dili_weight": 165.0,
+    "total_dili_weight": 13.0,
     "high_risk_drug_count": 5,
     "dili_risk_ratio": 0.35714285714285715,
-    "avg_dili_weight": 11.785714285714286,
+    "avg_dili_weight": 0.9285714285714286,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.012071992976294996,
-    "risk_category": "Low"
+    "dili_risk_score": 0.4482758620689655,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "GRIN3A",
     "drug_count": 14,
-    "total_dili_weight": 165.0,
+    "total_dili_weight": 13.0,
     "high_risk_drug_count": 5,
     "dili_risk_ratio": 0.35714285714285715,
-    "avg_dili_weight": 11.785714285714286,
+    "avg_dili_weight": 0.9285714285714286,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.012071992976294996,
-    "risk_category": "Low"
+    "dili_risk_score": 0.4482758620689655,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "GRIN3B",
     "drug_count": 14,
-    "total_dili_weight": 165.0,
+    "total_dili_weight": 13.0,
     "high_risk_drug_count": 5,
     "dili_risk_ratio": 0.35714285714285715,
-    "avg_dili_weight": 11.785714285714286,
+    "avg_dili_weight": 0.9285714285714286,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.012071992976294996,
-    "risk_category": "Low"
+    "dili_risk_score": 0.4482758620689655,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "GSR",
@@ -2020,7 +2020,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0001463271875914545,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -2031,40 +2031,40 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0001463271875914545,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "GUCY1B1",
     "drug_count": 8,
-    "total_dili_weight": 30.0,
+    "total_dili_weight": 9.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.375,
-    "avg_dili_weight": 3.75,
+    "avg_dili_weight": 1.125,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0021949078138718174,
+    "dili_risk_score": 0.3103448275862069,
     "risk_category": "Low"
   },
   {
     "target_symbol": "GUCY1B2",
     "drug_count": 8,
-    "total_dili_weight": 30.0,
+    "total_dili_weight": 9.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.375,
-    "avg_dili_weight": 3.75,
+    "avg_dili_weight": 1.125,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0021949078138718174,
+    "dili_risk_score": 0.3103448275862069,
     "risk_category": "Low"
   },
   {
     "target_symbol": "GUCY2C",
     "drug_count": 5,
-    "total_dili_weight": 16.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.2,
-    "avg_dili_weight": 3.2,
+    "avg_dili_weight": 0.8,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.001170617500731636,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -2081,23 +2081,23 @@
   {
     "target_symbol": "HCRTR1",
     "drug_count": 1,
-    "total_dili_weight": 20.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 1.0,
-    "avg_dili_weight": 20.0,
+    "avg_dili_weight": 2.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0014632718759145448,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "HCRTR2",
     "drug_count": 1,
-    "total_dili_weight": 20.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 1.0,
-    "avg_dili_weight": 20.0,
+    "avg_dili_weight": 2.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0014632718759145448,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -2224,12 +2224,12 @@
   {
     "target_symbol": "HMGCR",
     "drug_count": 6,
-    "total_dili_weight": 387.0,
+    "total_dili_weight": 3.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 64.5,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.028314310798946446,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
@@ -2246,13 +2246,13 @@
   {
     "target_symbol": "HRH1",
     "drug_count": 13,
-    "total_dili_weight": 54.0,
+    "total_dili_weight": 11.0,
     "high_risk_drug_count": 4,
     "dili_risk_ratio": 0.3076923076923077,
-    "avg_dili_weight": 4.153846153846154,
+    "avg_dili_weight": 0.8461538461538461,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.003950834064969272,
-    "risk_category": "Low"
+    "dili_risk_score": 0.3793103448275862,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "HRH2",
@@ -2262,18 +2262,18 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
     "target_symbol": "HTR1A",
     "drug_count": 10,
-    "total_dili_weight": 250.0,
+    "total_dili_weight": 8.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.3,
-    "avg_dili_weight": 25.0,
+    "avg_dili_weight": 0.8,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.018290898448931812,
+    "dili_risk_score": 0.27586206896551724,
     "risk_category": "Low"
   },
   {
@@ -2312,13 +2312,13 @@
   {
     "target_symbol": "HTR2A",
     "drug_count": 11,
-    "total_dili_weight": 1782.0,
+    "total_dili_weight": 10.0,
     "high_risk_drug_count": 4,
     "dili_risk_ratio": 0.36363636363636365,
-    "avg_dili_weight": 162.0,
+    "avg_dili_weight": 0.9090909090909091,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.13037752414398596,
-    "risk_category": "Low"
+    "dili_risk_score": 0.3448275862068966,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "HTR2B",
@@ -2334,34 +2334,34 @@
   {
     "target_symbol": "HTR2C",
     "drug_count": 11,
-    "total_dili_weight": 1206.0,
+    "total_dili_weight": 10.0,
     "high_risk_drug_count": 4,
     "dili_risk_ratio": 0.36363636363636365,
-    "avg_dili_weight": 109.63636363636364,
+    "avg_dili_weight": 0.9090909090909091,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.08823529411764706,
-    "risk_category": "Low"
+    "dili_risk_score": 0.3448275862068966,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "HTR3A",
     "drug_count": 5,
-    "total_dili_weight": 7.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.2,
-    "avg_dili_weight": 1.4,
+    "avg_dili_weight": 0.8,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0005121451565700908,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
     "target_symbol": "HTR4",
     "drug_count": 8,
-    "total_dili_weight": 43.0,
+    "total_dili_weight": 7.0,
     "high_risk_drug_count": 2,
     "dili_risk_ratio": 0.25,
-    "avg_dili_weight": 5.375,
+    "avg_dili_weight": 0.875,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0031460345332162717,
+    "dili_risk_score": 0.2413793103448276,
     "risk_category": "Low"
   },
   {
@@ -2526,7 +2526,7 @@
     "dili_risk_ratio": 0.5,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0001463271875914545,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -2548,7 +2548,7 @@
     "dili_risk_ratio": 0.4,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0003658179689786362,
+    "dili_risk_score": 0.1724137931034483,
     "risk_category": "Low"
   },
   {
@@ -2592,7 +2592,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0001463271875914545,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -2603,7 +2603,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0001463271875914545,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -2669,7 +2669,7 @@
     "dili_risk_ratio": 0.5,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0001463271875914545,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -2691,7 +2691,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -2702,7 +2702,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -2752,45 +2752,45 @@
   {
     "target_symbol": "MMP1",
     "drug_count": 8,
-    "total_dili_weight": 17.0,
+    "total_dili_weight": 5.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.125,
-    "avg_dili_weight": 2.125,
+    "avg_dili_weight": 0.625,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0012437810945273632,
+    "dili_risk_score": 0.1724137931034483,
     "risk_category": "Low"
   },
   {
     "target_symbol": "MMP13",
     "drug_count": 8,
-    "total_dili_weight": 17.0,
+    "total_dili_weight": 5.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.125,
-    "avg_dili_weight": 2.125,
+    "avg_dili_weight": 0.625,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0012437810945273632,
+    "dili_risk_score": 0.1724137931034483,
     "risk_category": "Low"
   },
   {
     "target_symbol": "MMP7",
     "drug_count": 8,
-    "total_dili_weight": 17.0,
+    "total_dili_weight": 5.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.125,
-    "avg_dili_weight": 2.125,
+    "avg_dili_weight": 0.625,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0012437810945273632,
+    "dili_risk_score": 0.1724137931034483,
     "risk_category": "Low"
   },
   {
     "target_symbol": "MMP8",
     "drug_count": 8,
-    "total_dili_weight": 17.0,
+    "total_dili_weight": 5.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.125,
-    "avg_dili_weight": 2.125,
+    "avg_dili_weight": 0.625,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0012437810945273632,
+    "dili_risk_score": 0.1724137931034483,
     "risk_category": "Low"
   },
   {
@@ -2807,23 +2807,23 @@
   {
     "target_symbol": "MTNR1A",
     "drug_count": 1,
-    "total_dili_weight": 30.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 1.0,
-    "avg_dili_weight": 30.0,
+    "avg_dili_weight": 2.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0021949078138718174,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "MTNR1B",
     "drug_count": 1,
-    "total_dili_weight": 30.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 1.0,
-    "avg_dili_weight": 30.0,
+    "avg_dili_weight": 2.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0021949078138718174,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -2834,7 +2834,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -2856,7 +2856,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0001463271875914545,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -2873,12 +2873,12 @@
   {
     "target_symbol": "NPC1L1",
     "drug_count": 2,
-    "total_dili_weight": 36.0,
+    "total_dili_weight": 1.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 18.0,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0026338893766461808,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -2906,23 +2906,23 @@
   {
     "target_symbol": "NR3C1",
     "drug_count": 29,
-    "total_dili_weight": 964.0,
+    "total_dili_weight": 19.0,
     "high_risk_drug_count": 7,
     "dili_risk_ratio": 0.2413793103448276,
-    "avg_dili_weight": 33.241379310344826,
+    "avg_dili_weight": 0.6551724137931034,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.07052970441908106,
-    "risk_category": "Low"
+    "dili_risk_score": 0.6551724137931034,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "NR3C2",
     "drug_count": 4,
-    "total_dili_weight": 160.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 40.0,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.011706175007316359,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -2961,35 +2961,35 @@
   {
     "target_symbol": "OPRD1",
     "drug_count": 14,
-    "total_dili_weight": 4247.0,
+    "total_dili_weight": 15.0,
     "high_risk_drug_count": 6,
     "dili_risk_ratio": 0.42857142857142855,
-    "avg_dili_weight": 303.35714285714283,
+    "avg_dili_weight": 1.0714285714285714,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.3107257828504536,
-    "risk_category": "Low"
+    "dili_risk_score": 0.5172413793103449,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "OPRK1",
     "drug_count": 18,
-    "total_dili_weight": 4366.0,
+    "total_dili_weight": 15.0,
     "high_risk_drug_count": 6,
     "dili_risk_ratio": 0.3333333333333333,
-    "avg_dili_weight": 242.55555555555554,
+    "avg_dili_weight": 0.8333333333333334,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.31943225051214513,
-    "risk_category": "Low"
+    "dili_risk_score": 0.5172413793103449,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "OPRM1",
     "drug_count": 19,
-    "total_dili_weight": 13668.0,
+    "total_dili_weight": 15.0,
     "high_risk_drug_count": 6,
     "dili_risk_ratio": 0.3157894736842105,
-    "avg_dili_weight": 719.3684210526316,
+    "avg_dili_weight": 0.7894736842105263,
     "network_dili_score": 0.0,
-    "dili_risk_score": 1.0,
-    "risk_category": "High"
+    "dili_risk_score": 0.5172413793103449,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "OXTR",
@@ -2999,7 +2999,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.00021949078138718174,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
@@ -3016,45 +3016,45 @@
   {
     "target_symbol": "PAH",
     "drug_count": 4,
-    "total_dili_weight": 11.0,
+    "total_dili_weight": 3.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.25,
-    "avg_dili_weight": 2.75,
+    "avg_dili_weight": 0.75,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0008047995317529997,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
     "target_symbol": "PARP1",
     "drug_count": 4,
-    "total_dili_weight": 3.0,
+    "total_dili_weight": 1.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 0.75,
+    "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.00021949078138718174,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
     "target_symbol": "PARP2",
     "drug_count": 4,
-    "total_dili_weight": 3.0,
+    "total_dili_weight": 1.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 0.75,
+    "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.00021949078138718174,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
     "target_symbol": "PARP3",
     "drug_count": 3,
-    "total_dili_weight": 3.0,
+    "total_dili_weight": 1.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 1.0,
+    "avg_dili_weight": 0.3333333333333333,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.00021949078138718174,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -3065,7 +3065,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -3076,7 +3076,7 @@
     "dili_risk_ratio": 0.6666666666666666,
     "avg_dili_weight": 1.3333333333333333,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -3164,7 +3164,7 @@
     "dili_risk_ratio": 0.25,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -3175,7 +3175,7 @@
     "dili_risk_ratio": 0.25,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -3186,7 +3186,7 @@
     "dili_risk_ratio": 0.25,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -3197,7 +3197,7 @@
     "dili_risk_ratio": 0.25,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -3285,7 +3285,7 @@
     "dili_risk_ratio": 0.25,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -3296,7 +3296,7 @@
     "dili_risk_ratio": 0.25,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -3307,7 +3307,7 @@
     "dili_risk_ratio": 0.25,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -3318,7 +3318,7 @@
     "dili_risk_ratio": 0.25,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -3368,12 +3368,12 @@
   {
     "target_symbol": "PGR",
     "drug_count": 12,
-    "total_dili_weight": 21.0,
+    "total_dili_weight": 9.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.25,
-    "avg_dili_weight": 1.75,
+    "avg_dili_weight": 0.75,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0015364354697102723,
+    "dili_risk_score": 0.3103448275862069,
     "risk_category": "Low"
   },
   {
@@ -3439,7 +3439,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -3450,7 +3450,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -3461,7 +3461,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -3472,7 +3472,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -3483,7 +3483,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -3494,7 +3494,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -3505,7 +3505,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -3516,7 +3516,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -3527,18 +3527,18 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
     "target_symbol": "PPARA",
     "drug_count": 1,
-    "total_dili_weight": 6.0,
+    "total_dili_weight": 1.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 6.0,
+    "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0004389815627743635,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -3566,12 +3566,12 @@
   {
     "target_symbol": "PPIA",
     "drug_count": 4,
-    "total_dili_weight": 15.0,
+    "total_dili_weight": 5.0,
     "high_risk_drug_count": 2,
     "dili_risk_ratio": 0.5,
-    "avg_dili_weight": 3.75,
+    "avg_dili_weight": 1.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0010974539069359087,
+    "dili_risk_score": 0.1724137931034483,
     "risk_category": "Low"
   },
   {
@@ -3582,7 +3582,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -3593,7 +3593,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -3731,35 +3731,35 @@
   {
     "target_symbol": "PTGFR",
     "drug_count": 3,
-    "total_dili_weight": 4.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 1.3333333333333333,
+    "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "PTGS1",
     "drug_count": 37,
-    "total_dili_weight": 8386.0,
+    "total_dili_weight": 29.0,
     "high_risk_drug_count": 10,
     "dili_risk_ratio": 0.2702702702702703,
-    "avg_dili_weight": 226.64864864864865,
+    "avg_dili_weight": 0.7837837837837838,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.6135498975709687,
-    "risk_category": "Medium"
+    "dili_risk_score": 1.0,
+    "risk_category": "High"
   },
   {
     "target_symbol": "PTGS2",
     "drug_count": 38,
-    "total_dili_weight": 8813.0,
+    "total_dili_weight": 29.0,
     "high_risk_drug_count": 10,
     "dili_risk_ratio": 0.2631578947368421,
-    "avg_dili_weight": 231.92105263157896,
+    "avg_dili_weight": 0.7631578947368421,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.6447907521217442,
-    "risk_category": "Medium"
+    "dili_risk_score": 1.0,
+    "risk_category": "High"
   },
   {
     "target_symbol": "PTK6",
@@ -3819,12 +3819,12 @@
   {
     "target_symbol": "REN",
     "drug_count": 4,
-    "total_dili_weight": 18.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 4.5,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0013169446883230904,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -3857,7 +3857,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -3874,12 +3874,12 @@
   {
     "target_symbol": "RXRA",
     "drug_count": 6,
-    "total_dili_weight": 8.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.16666666666666666,
-    "avg_dili_weight": 1.3333333333333333,
+    "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000585308750365818,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -3962,133 +3962,133 @@
   {
     "target_symbol": "SCN10A",
     "drug_count": 29,
-    "total_dili_weight": 1419.0,
+    "total_dili_weight": 23.0,
     "high_risk_drug_count": 6,
     "dili_risk_ratio": 0.20689655172413793,
-    "avg_dili_weight": 48.93103448275862,
+    "avg_dili_weight": 0.7931034482758621,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.10381913959613696,
-    "risk_category": "Low"
+    "dili_risk_score": 0.7931034482758621,
+    "risk_category": "High"
   },
   {
     "target_symbol": "SCN11A",
     "drug_count": 29,
-    "total_dili_weight": 1419.0,
+    "total_dili_weight": 23.0,
     "high_risk_drug_count": 6,
     "dili_risk_ratio": 0.20689655172413793,
-    "avg_dili_weight": 48.93103448275862,
+    "avg_dili_weight": 0.7931034482758621,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.10381913959613696,
-    "risk_category": "Low"
+    "dili_risk_score": 0.7931034482758621,
+    "risk_category": "High"
   },
   {
     "target_symbol": "SCN1A",
     "drug_count": 29,
-    "total_dili_weight": 1419.0,
+    "total_dili_weight": 23.0,
     "high_risk_drug_count": 6,
     "dili_risk_ratio": 0.20689655172413793,
-    "avg_dili_weight": 48.93103448275862,
+    "avg_dili_weight": 0.7931034482758621,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.10381913959613696,
-    "risk_category": "Low"
+    "dili_risk_score": 0.7931034482758621,
+    "risk_category": "High"
   },
   {
     "target_symbol": "SCN2A",
     "drug_count": 29,
-    "total_dili_weight": 1419.0,
+    "total_dili_weight": 23.0,
     "high_risk_drug_count": 6,
     "dili_risk_ratio": 0.20689655172413793,
-    "avg_dili_weight": 48.93103448275862,
+    "avg_dili_weight": 0.7931034482758621,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.10381913959613696,
-    "risk_category": "Low"
+    "dili_risk_score": 0.7931034482758621,
+    "risk_category": "High"
   },
   {
     "target_symbol": "SCN3A",
     "drug_count": 29,
-    "total_dili_weight": 1419.0,
+    "total_dili_weight": 23.0,
     "high_risk_drug_count": 6,
     "dili_risk_ratio": 0.20689655172413793,
-    "avg_dili_weight": 48.93103448275862,
+    "avg_dili_weight": 0.7931034482758621,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.10381913959613696,
-    "risk_category": "Low"
+    "dili_risk_score": 0.7931034482758621,
+    "risk_category": "High"
   },
   {
     "target_symbol": "SCN4A",
     "drug_count": 29,
-    "total_dili_weight": 3428.0,
+    "total_dili_weight": 23.0,
     "high_risk_drug_count": 6,
     "dili_risk_ratio": 0.20689655172413793,
-    "avg_dili_weight": 118.20689655172414,
+    "avg_dili_weight": 0.7931034482758621,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.250804799531753,
-    "risk_category": "Low"
+    "dili_risk_score": 0.7931034482758621,
+    "risk_category": "High"
   },
   {
     "target_symbol": "SCN5A",
     "drug_count": 29,
-    "total_dili_weight": 1419.0,
+    "total_dili_weight": 23.0,
     "high_risk_drug_count": 6,
     "dili_risk_ratio": 0.20689655172413793,
-    "avg_dili_weight": 48.93103448275862,
+    "avg_dili_weight": 0.7931034482758621,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.10381913959613696,
-    "risk_category": "Low"
+    "dili_risk_score": 0.7931034482758621,
+    "risk_category": "High"
   },
   {
     "target_symbol": "SCN7A",
     "drug_count": 29,
-    "total_dili_weight": 1419.0,
+    "total_dili_weight": 23.0,
     "high_risk_drug_count": 6,
     "dili_risk_ratio": 0.20689655172413793,
-    "avg_dili_weight": 48.93103448275862,
+    "avg_dili_weight": 0.7931034482758621,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.10381913959613696,
-    "risk_category": "Low"
+    "dili_risk_score": 0.7931034482758621,
+    "risk_category": "High"
   },
   {
     "target_symbol": "SCN8A",
     "drug_count": 29,
-    "total_dili_weight": 1419.0,
+    "total_dili_weight": 23.0,
     "high_risk_drug_count": 6,
     "dili_risk_ratio": 0.20689655172413793,
-    "avg_dili_weight": 48.93103448275862,
+    "avg_dili_weight": 0.7931034482758621,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.10381913959613696,
-    "risk_category": "Low"
+    "dili_risk_score": 0.7931034482758621,
+    "risk_category": "High"
   },
   {
     "target_symbol": "SCN9A",
     "drug_count": 29,
-    "total_dili_weight": 1419.0,
+    "total_dili_weight": 23.0,
     "high_risk_drug_count": 6,
     "dili_risk_ratio": 0.20689655172413793,
-    "avg_dili_weight": 48.93103448275862,
+    "avg_dili_weight": 0.7931034482758621,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.10381913959613696,
-    "risk_category": "Low"
+    "dili_risk_score": 0.7931034482758621,
+    "risk_category": "High"
   },
   {
     "target_symbol": "SCNN1A",
     "drug_count": 4,
-    "total_dili_weight": 152.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 38.0,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.01112086625695054,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "SIGMAR1",
     "drug_count": 6,
-    "total_dili_weight": 168.0,
+    "total_dili_weight": 7.0,
     "high_risk_drug_count": 3,
     "dili_risk_ratio": 0.5,
-    "avg_dili_weight": 28.0,
+    "avg_dili_weight": 1.1666666666666667,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.012291483757682178,
+    "dili_risk_score": 0.2413793103448276,
     "risk_category": "Low"
   },
   {
@@ -4105,34 +4105,34 @@
   {
     "target_symbol": "SLC12A1",
     "drug_count": 4,
-    "total_dili_weight": 156.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 39.0,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.01141352063213345,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "SLC12A3",
     "drug_count": 3,
-    "total_dili_weight": 1304.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 434.6666666666667,
+    "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.09540532630962834,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "SLC18A2",
     "drug_count": 4,
-    "total_dili_weight": 20.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 1,
     "dili_risk_ratio": 0.25,
-    "avg_dili_weight": 5.0,
+    "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0014632718759145448,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -4149,13 +4149,13 @@
   {
     "target_symbol": "SLC6A2",
     "drug_count": 15,
-    "total_dili_weight": 201.0,
+    "total_dili_weight": 15.0,
     "high_risk_drug_count": 5,
     "dili_risk_ratio": 0.3333333333333333,
-    "avg_dili_weight": 13.4,
+    "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.014705882352941176,
-    "risk_category": "Low"
+    "dili_risk_score": 0.5172413793103449,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "SLC6A4",
@@ -4165,7 +4165,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.4,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0001463271875914545,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -4176,7 +4176,7 @@
     "dili_risk_ratio": 0.2,
     "avg_dili_weight": 0.8,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
@@ -4204,12 +4204,12 @@
   {
     "target_symbol": "SNAP25",
     "drug_count": 3,
-    "total_dili_weight": 3.0,
+    "total_dili_weight": 1.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 1.0,
+    "avg_dili_weight": 0.3333333333333333,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.00021949078138718174,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -4336,12 +4336,12 @@
   {
     "target_symbol": "TACR1",
     "drug_count": 2,
-    "total_dili_weight": 4.0,
+    "total_dili_weight": 1.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 2.0,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.000292654375182909,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -4407,7 +4407,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0001463271875914545,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -4435,23 +4435,23 @@
   {
     "target_symbol": "TLR7",
     "drug_count": 4,
-    "total_dili_weight": 14.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 3.5,
+    "avg_dili_weight": 0.5,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0010242903131401815,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
     "target_symbol": "TLR9",
     "drug_count": 3,
-    "total_dili_weight": 14.0,
+    "total_dili_weight": 2.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 4.666666666666667,
+    "avg_dili_weight": 0.6666666666666666,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0010242903131401815,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -4462,7 +4462,7 @@
     "dili_risk_ratio": 0.2857142857142857,
     "avg_dili_weight": 0.7142857142857143,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0003658179689786362,
+    "dili_risk_score": 0.1724137931034483,
     "risk_category": "Low"
   },
   {
@@ -4506,7 +4506,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.1111111111111111,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -4517,7 +4517,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0001463271875914545,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {
@@ -4528,7 +4528,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.25,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.00021949078138718174,
+    "dili_risk_score": 0.10344827586206896,
     "risk_category": "Low"
   },
   {
@@ -4567,34 +4567,34 @@
   {
     "target_symbol": "TRPA1",
     "drug_count": 23,
-    "total_dili_weight": 369.0,
+    "total_dili_weight": 17.0,
     "high_risk_drug_count": 4,
     "dili_risk_ratio": 0.17391304347826086,
-    "avg_dili_weight": 16.043478260869566,
+    "avg_dili_weight": 0.7391304347826086,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.026997366110623353,
-    "risk_category": "Low"
+    "dili_risk_score": 0.5862068965517241,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "TRPM8",
     "drug_count": 23,
-    "total_dili_weight": 369.0,
+    "total_dili_weight": 17.0,
     "high_risk_drug_count": 4,
     "dili_risk_ratio": 0.17391304347826086,
-    "avg_dili_weight": 16.043478260869566,
+    "avg_dili_weight": 0.7391304347826086,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.026997366110623353,
-    "risk_category": "Low"
+    "dili_risk_score": 0.5862068965517241,
+    "risk_category": "Medium"
   },
   {
     "target_symbol": "TRPV1",
     "drug_count": 21,
-    "total_dili_weight": 4784.0,
+    "total_dili_weight": 16.0,
     "high_risk_drug_count": 5,
     "dili_risk_ratio": 0.23809523809523808,
-    "avg_dili_weight": 227.8095238095238,
+    "avg_dili_weight": 0.7619047619047619,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.35001463271875916,
+    "dili_risk_score": 0.5517241379310345,
     "risk_category": "Medium"
   },
   {
@@ -4611,111 +4611,111 @@
   {
     "target_symbol": "TUBB",
     "drug_count": 14,
-    "total_dili_weight": 9.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 0.6428571428571429,
+    "avg_dili_weight": 0.2857142857142857,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0006584723441615452,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
     "target_symbol": "TUBB1",
     "drug_count": 14,
-    "total_dili_weight": 9.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 0.6428571428571429,
+    "avg_dili_weight": 0.2857142857142857,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0006584723441615452,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
     "target_symbol": "TUBB2A",
     "drug_count": 14,
-    "total_dili_weight": 9.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 0.6428571428571429,
+    "avg_dili_weight": 0.2857142857142857,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0006584723441615452,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
     "target_symbol": "TUBB2B",
     "drug_count": 14,
-    "total_dili_weight": 9.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 0.6428571428571429,
+    "avg_dili_weight": 0.2857142857142857,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0006584723441615452,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
     "target_symbol": "TUBB3",
     "drug_count": 14,
-    "total_dili_weight": 9.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 0.6428571428571429,
+    "avg_dili_weight": 0.2857142857142857,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0006584723441615452,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
     "target_symbol": "TUBB4A",
     "drug_count": 14,
-    "total_dili_weight": 9.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 0.6428571428571429,
+    "avg_dili_weight": 0.2857142857142857,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0006584723441615452,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
     "target_symbol": "TUBB4B",
     "drug_count": 14,
-    "total_dili_weight": 9.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 0.6428571428571429,
+    "avg_dili_weight": 0.2857142857142857,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0006584723441615452,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
     "target_symbol": "TUBB6",
     "drug_count": 14,
-    "total_dili_weight": 9.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 0.6428571428571429,
+    "avg_dili_weight": 0.2857142857142857,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0006584723441615452,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
     "target_symbol": "TUBB8",
     "drug_count": 14,
-    "total_dili_weight": 9.0,
+    "total_dili_weight": 4.0,
     "high_risk_drug_count": 0,
     "dili_risk_ratio": 0.0,
-    "avg_dili_weight": 0.6428571428571429,
+    "avg_dili_weight": 0.2857142857142857,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0006584723441615452,
+    "dili_risk_score": 0.13793103448275862,
     "risk_category": "Low"
   },
   {
     "target_symbol": "TYMS",
     "drug_count": 7,
-    "total_dili_weight": 16.0,
+    "total_dili_weight": 5.0,
     "high_risk_drug_count": 2,
     "dili_risk_ratio": 0.2857142857142857,
-    "avg_dili_weight": 2.2857142857142856,
+    "avg_dili_weight": 0.7142857142857143,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.001170617500731636,
+    "dili_risk_score": 0.1724137931034483,
     "risk_category": "Low"
   },
   {
@@ -4726,7 +4726,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 1.0,
     "network_dili_score": 0.0,
-    "dili_risk_score": 7.316359379572725e-05,
+    "dili_risk_score": 0.034482758620689655,
     "risk_category": "Low"
   },
   {
@@ -4737,7 +4737,7 @@
     "dili_risk_ratio": 0.0,
     "avg_dili_weight": 0.3333333333333333,
     "network_dili_score": 0.0,
-    "dili_risk_score": 0.0001463271875914545,
+    "dili_risk_score": 0.06896551724137931,
     "risk_category": "Low"
   },
   {

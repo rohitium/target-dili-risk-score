@@ -1,37 +1,37 @@
 Target DILI Risk Score - Validation Report
 ==================================================
-Generated: 2025-07-14 10:17:17
+Generated: 2025-07-14 12:21:44
 
 SUMMARY STATISTICS
 --------------------
 Total targets analyzed: 434
-Mean DILI risk score: 0.015
+Mean DILI risk score: 0.101
 Risk score range: 0.000 - 1.000
-Mean approval rate: 0.656
-Mean withdrawal rate: 0.239
+Mean approval rate: 0.646
+Mean withdrawal rate: 0.260
 
 VALIDATION RESULTS
 --------------------
-DILI risk score vs approval rate correlation: -0.119
+DILI risk score vs approval rate correlation: -0.252
 ✓ Negative correlation: Higher DILI risk targets have lower approval rates
-DILI risk score vs withdrawal rate correlation: 0.077
+DILI risk score vs withdrawal rate correlation: 0.212
 ✓ Positive correlation: Higher DILI risk targets have higher withdrawal rates
 
 RISK CATEGORY DISTRIBUTION
 ------------------------------
-Low risk: 429 targets
-Medium risk: 4 targets
-High risk: 1 targets
+Low risk: 391 targets
+Medium risk: 31 targets
+High risk: 12 targets
 
 TOP 10 HIGHEST DILI RISK TARGETS
 ------------------------------
-OPRM1: 1.000 (High) - Approval: 0.409 (10035 drugs)
-PTGS2: 0.645 (Medium) - Approval: 0.386 (6762 drugs)
-PTGS1: 0.614 (Medium) - Approval: 0.385 (6454 drugs)
-TRPV1: 0.350 (Medium) - Approval: 0.377 (3699 drugs)
-FAAH: 0.335 (Medium) - Approval: 0.375 (3514 drugs)
-OPRK1: 0.319 (Low) - Approval: 0.398 (3151 drugs)
-OPRD1: 0.311 (Low) - Approval: 0.398 (3060 drugs)
-SCN4A: 0.251 (Low) - Approval: 0.398 (2504 drugs)
-DRD2: 0.135 (Low) - Approval: 0.530 (1884 drugs)
-HTR2A: 0.130 (Low) - Approval: 0.531 (1820 drugs)
+PTGS1: 1.000 (High) - Approval: 0.432 Withdrawal: 0.432 (37 drugs)
+PTGS2: 1.000 (High) - Approval: 0.447 Withdrawal: 0.421 (38 drugs)
+SCN10A: 0.793 (High) - Approval: 0.448 Withdrawal: 0.448 (29 drugs)
+SCN11A: 0.793 (High) - Approval: 0.448 Withdrawal: 0.448 (29 drugs)
+SCN1A: 0.793 (High) - Approval: 0.448 Withdrawal: 0.448 (29 drugs)
+SCN2A: 0.793 (High) - Approval: 0.448 Withdrawal: 0.448 (29 drugs)
+SCN3A: 0.793 (High) - Approval: 0.448 Withdrawal: 0.448 (29 drugs)
+SCN4A: 0.793 (High) - Approval: 0.448 Withdrawal: 0.448 (29 drugs)
+SCN5A: 0.793 (High) - Approval: 0.448 Withdrawal: 0.448 (29 drugs)
+SCN7A: 0.793 (High) - Approval: 0.448 Withdrawal: 0.448 (29 drugs)

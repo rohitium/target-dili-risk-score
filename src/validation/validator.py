@@ -83,6 +83,8 @@ class Validator:
         generate_validation_report(validation_df, report_path)
         # Save validation results
         output_path = self.processed_dir / "validation_results.parquet"
+        # Reset index to include target symbols as a column
+        validation_df = validation_df.reset_index()
         validation_df.to_parquet(output_path, index=False)
         logger.info(f"Saved validation results to {output_path}")
         # Plots

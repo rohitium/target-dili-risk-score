@@ -4,9 +4,9 @@ A fully automated, biologically informed pipeline for assessing drug target live
 
 ## What It Does
 - **Acquires** all required data (OpenTargets, DILIrank, Pathway Commons, OpenFDA)
-- **Builds** unified drug-target and network tables
+- **Builds** unified, deduplicated drug-target and network tables
 - **Scores** targets for DILI risk (direct evidence + network guilt-by-association)
-- **Validates** risk scores against drug approval and withdrawal rates
+- **Validates** risk scores against drug withdrawal and approval rates
 - **Outputs** clean tables, a validation report, and high-quality plots
 
 ## 🌐 Web Application
@@ -31,18 +31,33 @@ pip install -r requirements.txt
 python main.py
 ```
 
+## Project Structure
+```
+├── main.py                 # Main pipeline entry point
+├── src/                    # Source code modules
+│   ├── acquisition/        # Data acquisition modules
+│   ├── etl/              # ETL pipeline modules
+│   ├── features/          # Risk scoring modules
+│   └── validation/        # Validation modules
+├── docs/                  # Web application files
+├── scripts/               # Utility scripts
+├── data/                  # Data files (raw, interim, processed)
+├── results/               # Output plots and reports
+└── config/                # Configuration files
+```
+
 ## Outputs
-- `data/processed/drug_target_table.parquet` — Drug-target associations with DILI and approval/withdrawal data
+- `data/processed/drug_target_table.parquet` — Deduplicated drug-target associations with DILI and approval/withdrawal data
 - `data/processed/dili_risk_scores.parquet` — Final risk scores and categories
 - `data/processed/validation_results.parquet` — Validation metrics
 - `results/validation_report.txt` — Summary report (correlations, risk categories, top targets)
-- `results/risk_vs_approval.png` — Approval rate vs. DILI risk score plot
 - `results/risk_vs_withdrawal.png` — Withdrawal rate vs. DILI risk score plot
+- `results/risk_vs_approval.png` — Approval rate vs. DILI risk score plot (secondary)
 
 ## Rationale
 - **Direct DILI evidence:** Targets with more high-risk drugs (from FDA DILIrank) are scored higher
 - **Network guilt-by-association:** Targets connected to high-risk neighbors (from Pathway Commons) are upweighted
-- **Validation:** Risk scores are correlated with both drug approval and withdrawal rates (withdrawal is a more specific metric for DILI)
+- **Validation:** Risk scores are validated against drug withdrawal/approval rates
 
 ## Configuration
 Edit `config/config.yml` for:
