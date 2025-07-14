@@ -17,7 +17,7 @@ sys.path.append(str(Path(__file__).parent / "src"))
 
 from etl.etl import ETL
 from features.dili_risk_scorer import DILIRiskScorer
-from validation.approval_validator import ApprovalValidator
+from validation.validator import Validator
 
 
 def setup_logging():
@@ -69,7 +69,7 @@ def main():
         
         # Step 3: Validation - Validate against approval rates
         logger.info("\n--- Step 3: Validation ---")
-        validator = ApprovalValidator()
+        validator = Validator()
         validation_results = validator.run_validation()
         
         if validation_results.empty:
