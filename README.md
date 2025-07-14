@@ -9,6 +9,18 @@ A fully automated, biologically informed pipeline for assessing drug target live
 - **Validates** risk scores against drug approval and withdrawal rates
 - **Outputs** clean tables, a validation report, and high-quality plots
 
+## 🌐 Web Application
+
+**Live Demo**: [DILI Risk Score Checker](https://your-username.github.io/target-dili-risk-score/)
+
+A beautiful, interactive web app for checking DILI risk scores for any drug target:
+- **Search** any target by symbol (e.g., CYP3A4, ABCB1, SLC22A1)
+- **View** detailed risk scores, categories, and metrics
+- **Explore** interactive charts and visualizations
+- **Mobile-friendly** responsive design
+
+The web app automatically updates when the pipeline runs, providing real-time access to the latest risk scores.
+
 ## Quick Start
 ```bash
 git clone <repo-url>
