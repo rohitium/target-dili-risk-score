@@ -28,14 +28,14 @@ class DirectEvidenceComputer:
         # Deduplicate drug-target pairs to prevent inflated weights
         # Keep the first occurrence of each unique drug-target pair
         drug_target_dedup = drug_target_df.drop_duplicates(
-            subset=['fda_drug_name', 'ot_target_symbol'], 
+            subset=['fda_drug_name', 'target_symbol'], 
             keep='first'
         )
         
         logger.info(f"Deduplicated from {len(drug_target_df)} to {len(drug_target_dedup)} unique drug-target pairs")
         
         # Aggregate DILI evidence per target
-        direct_evidence = drug_target_dedup.groupby('ot_target_symbol').agg({
+        direct_evidence = drug_target_dedup.groupby('target_symbol').agg({
             'fda_drug_name': 'nunique',  # Number of unique drugs targeting this target
             'dili_severity_weight': 'sum',  # Sum of DILI severity weights (now from unique drugs only)
         }).rename(columns={
@@ -46,7 +46,7 @@ class DirectEvidenceComputer:
         # Calculate high-risk drug count (unique drugs that are high-risk)
         high_risk_counts = drug_target_dedup[
             drug_target_dedup['fda_dili_concern'] == 'Most-DILI-Concern'
-        ].groupby('ot_target_symbol')['fda_drug_name'].nunique()
+        ].groupby('target_symbol')['fda_drug_name'].nunique()
         
         direct_evidence['high_risk_drug_count'] = high_risk_counts.fillna(0)
         

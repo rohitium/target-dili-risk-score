@@ -9,7 +9,7 @@ def plot_risk_vs_approval(validation_df, out_path='results/risk_vs_approval.png'
     y = validation_df['approval_rate'].values
     c = validation_df['dili_risk_score'].values
     fig, ax = plt.subplots(figsize=(8, 6))
-    if 'ot_target_symbol' not in validation_df.columns:
+    if 'target_symbol' not in validation_df.columns:
         validation_df = validation_df.reset_index()
     if np.any(c > 0):
         norm = mpl.colors.LogNorm(vmin=np.min(c[c > 0]), vmax=np.max(c))
@@ -27,9 +27,9 @@ def plot_risk_vs_approval(validation_df, out_path='results/risk_vs_approval.png'
     for i, mag in enumerate(mags):
         idx = (np.abs(x - mag)).argmin()
         row = validation_df.iloc[idx]
-        label = row['ot_target_symbol'] if 'ot_target_symbol' in row else str(idx)
+        label = row['target_symbol'] if 'target_symbol' in row else str(idx)
         dx, dy = offsets[i % len(offsets)]
-        ax.annotate(f"{label}\n({row['dili_risk_score']:.1e})",
+        ax.annotate(f"{label}\n({format_sig(row['dili_risk_score'])})",
                     (row['dili_risk_score'], row['approval_rate']),
                     textcoords="offset points", xytext=(dx, dy), ha='center', fontsize=9,
                     bbox=dict(boxstyle="round,pad=0.2", fc="white", ec="none", lw=0, alpha=0.8),
@@ -48,7 +48,7 @@ def plot_risk_vs_withdrawal(validation_df, out_path='results/risk_vs_withdrawal.
     y = validation_df['withdrawal_rate'].values
     c = validation_df['dili_risk_score'].values
     fig, ax = plt.subplots(figsize=(8, 6))
-    if 'ot_target_symbol' not in validation_df.columns:
+    if 'target_symbol' not in validation_df.columns:
         validation_df = validation_df.reset_index()
     if np.any(c > 0):
         norm = mpl.colors.LogNorm(vmin=np.min(c[c > 0]), vmax=np.max(c))
@@ -66,9 +66,9 @@ def plot_risk_vs_withdrawal(validation_df, out_path='results/risk_vs_withdrawal.
     for i, mag in enumerate(mags):
         idx = (np.abs(x - mag)).argmin()
         row = validation_df.iloc[idx]
-        label = row['ot_target_symbol'] if 'ot_target_symbol' in row else str(idx)
+        label = row['target_symbol'] if 'target_symbol' in row else str(idx)
         dx, dy = offsets[i % len(offsets)]
-        ax.annotate(f"{label}\n({row['dili_risk_score']:.1e})",
+        ax.annotate(f"{label}\n({format_sig(row['dili_risk_score'])})",
                     (row['dili_risk_score'], row['withdrawal_rate']),
                     textcoords="offset points", xytext=(dx, dy), ha='center', fontsize=9,
                     bbox=dict(boxstyle="round,pad=0.2", fc="white", ec="none", lw=0, alpha=0.8),
@@ -76,4 +76,10 @@ def plot_risk_vs_withdrawal(validation_df, out_path='results/risk_vs_withdrawal.
     plt.tight_layout()
     plt.savefig(out_path, dpi=150)
     plt.close()
-    logger.info(f"Saved risk vs withdrawal plot to {out_path}") 
+    logger.info(f"Saved risk vs withdrawal plot to {out_path}")
+
+def format_sig(x, sig=1):
+    if x == 0:
+        return "0"
+    from math import log10, floor
+    return f"{round(x, -int(floor(log10(abs(x)))) + (sig - 1))}" 

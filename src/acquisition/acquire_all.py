@@ -42,9 +42,63 @@ def acquire_openfda():
         logging.info(f"OpenFDA bulk JSON found at {path}")
     return path
 
+def acquire_drug_target_associations(config):
+    """Acquire drug-target associations from OpenTargets and create clean mapping."""
+    from .opentargets_bigquery import OpenTargetsBigQuery
+    import sys
+    sys.path.append('src/utils')
+    from drug_matching import match_fda_to_opentargets_drugs, validate_drug_matches, create_drug_target_mapping
+    import pandas as pd
+    
+    project_id = config['bigquery']['project_id']
+    dataset = config['bigquery']['dataset']
+    client = OpenTargetsBigQuery(project_id, dataset)
+    
+    # Load FDA DILIrank data
+    fda_dilirank_path = Path('data/interim/fda_dilirank.parquet')
+    if not fda_dilirank_path.exists():
+        logging.error("FDA DILIrank data not found. Run acquire_fda_dilirank() first.")
+        return None
+    
+    fda_dilirank_df = pd.read_parquet(fda_dilirank_path)
+    fda_drugs = fda_dilirank_df['Compound Name'].unique().tolist()
+    logging.info(f"Loaded {len(fda_drugs)} FDA DILIrank drugs")
+    
+    # Query OpenTargets drugs
+    ot_drugs_df = client.query_drugs()
+    if ot_drugs_df.empty:
+        logging.error("Failed to query OpenTargets drugs")
+        return None
+    
+    ot_drugs = ot_drugs_df['drug_name'].unique().tolist()
+    logging.info(f"Retrieved {len(ot_drugs)} OpenTargets drugs")
+    
+    # Match FDA drugs to OpenTargets drugs
+    matches = match_fda_to_opentargets_drugs(fda_drugs, ot_drugs, threshold=0.8)
+    validate_drug_matches(matches)
+    
+    # Query drug-target associations for matched drugs
+    matched_ot_drugs = list(matches.values())
+    ot_drug_target_df = client.query_drug_target_associations_for_drugs(matched_ot_drugs)
+    
+    if ot_drug_target_df.empty:
+        logging.error("Failed to query drug-target associations")
+        return None
+    
+    # Create clean drug-target mapping
+    clean_mapping_df = create_drug_target_mapping(fda_dilirank_df, ot_drug_target_df, matches)
+    
+    # Save clean mapping
+    out_path = Path('data/interim/drug_target_mapping_clean.parquet')
+    clean_mapping_df.to_parquet(out_path, index=False)
+    logging.info(f"Saved clean drug-target mapping to {out_path}")
+    
+    return out_path
+
 def acquire_all(config):
     acquire_opentargets(config)
     acquire_pathway_commons()
     acquire_fda_dilirank()
     acquire_openfda()
+    acquire_drug_target_associations(config)
     logging.info("All acquisition steps complete.") 

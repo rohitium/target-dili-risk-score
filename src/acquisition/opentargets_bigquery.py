@@ -178,6 +178,223 @@ class OpenTargetsBigQuery:
             logger.error(f"Failed to query drug-target associations: {e}")
             return pd.DataFrame()
 
+    def query_drugs(self) -> pd.DataFrame:
+        """
+        Query drug information from OpenTargets known_drug table.
+        
+        Returns:
+            DataFrame with drug information
+        """
+        logger.info("Querying drug information from OpenTargets known_drug table")
+        
+        query = f"""
+        SELECT DISTINCT
+            drugId,
+            prefName as drug_name,
+            drugType,
+            tradeNames,
+            synonyms
+        FROM `{self.dataset}.known_drug`
+        WHERE drugId IS NOT NULL
+        AND prefName IS NOT NULL
+        AND prefName != ''
+        ORDER BY prefName
+        """
+        
+        try:
+            df = self.client.query(query).to_dataframe()
+            logger.info(f"Retrieved {len(df)} drugs from OpenTargets known_drug table")
+            return df
+        except Exception as e:
+            logger.error(f"Failed to query drugs: {e}")
+            return pd.DataFrame()
+
+    def query_drug_target_associations_clean(self) -> pd.DataFrame:
+        """
+        Query drug-target associations from OpenTargets known_drug table.
+        
+        Returns:
+            DataFrame with drug-target associations
+        """
+        logger.info("Querying drug-target associations from known_drug table")
+        
+        query = f"""
+        SELECT 
+            drugId,
+            prefName as drug_name,
+            drugType,
+            targetId,
+            approvedSymbol as target_symbol,
+            approvedName as target_name,
+            mechanismOfAction,
+            phase,
+            status
+        FROM `{self.dataset}.known_drug`
+        WHERE drugId IS NOT NULL
+        AND prefName IS NOT NULL
+        AND prefName != ''
+        AND targetId IS NOT NULL
+        ORDER BY prefName
+        """
+        
+        try:
+            df = self.client.query(query).to_dataframe()
+            logger.info(f"Retrieved {len(df)} drug-target associations")
+            return df
+        except Exception as e:
+            logger.error(f"Failed to query drug-target associations: {e}")
+            return pd.DataFrame()
+
+    def query_drug_target_associations_for_drugs(self, drug_names: List[str]) -> pd.DataFrame:
+        """
+        Query drug-target associations for specific drugs.
+        
+        Args:
+            drug_names: List of drug names to query
+            
+        Returns:
+            DataFrame with drug-target associations
+        """
+        logger.info(f"Querying drug-target associations for {len(drug_names)} drugs")
+        
+        # Create drug name conditions for the query
+        drug_conditions = " OR ".join([f"LOWER(prefName) LIKE '%{drug.lower()}%'" for drug in drug_names])
+        
+        query = f"""
+        SELECT 
+            drugId,
+            prefName as drug_name,
+            drugType,
+            targetId,
+            approvedSymbol as target_symbol,
+            approvedName as target_name,
+            mechanismOfAction,
+            phase,
+            status
+        FROM `{self.dataset}.known_drug`
+        WHERE drugId IS NOT NULL
+        AND prefName IS NOT NULL
+        AND prefName != ''
+        AND targetId IS NOT NULL
+        AND ({drug_conditions})
+        ORDER BY prefName
+        """
+        
+        try:
+            df = self.client.query(query).to_dataframe()
+            logger.info(f"Retrieved {len(df)} drug-target associations for specified drugs")
+            return df
+        except Exception as e:
+            logger.error(f"Failed to query drug-target associations for specific drugs: {e}")
+            return pd.DataFrame()
+
+    def inspect_table_schema(self, table_name: str) -> pd.DataFrame:
+        """
+        Inspect the schema of a BigQuery table.
+        
+        Args:
+            table_name: Name of the table to inspect
+            
+        Returns:
+            DataFrame with column information
+        """
+        logger.info(f"Inspecting schema for table: {table_name}")
+        
+        query = f"""
+        SELECT 
+            column_name,
+            data_type,
+            is_nullable
+        FROM `{self.dataset}.INFORMATION_SCHEMA.COLUMNS`
+        WHERE table_name = '{table_name}'
+        ORDER BY ordinal_position
+        """
+        
+        try:
+            df = self.client.query(query).to_dataframe()
+            logger.info(f"Retrieved schema for {table_name} with {len(df)} columns")
+            return df
+        except Exception as e:
+            logger.error(f"Failed to inspect schema for {table_name}: {e}")
+            return pd.DataFrame()
+
+    def inspect_evidence_schema(self) -> pd.DataFrame:
+        """
+        Inspect the schema of the evidence table to find drug-related fields.
+        
+        Returns:
+            DataFrame with evidence table schema
+        """
+        return self.inspect_table_schema('evidence')
+
+    def inspect_target_schema(self) -> pd.DataFrame:
+        """
+        Inspect the schema of the target table.
+        
+        Returns:
+            DataFrame with target table schema
+        """
+        return self.inspect_table_schema('target')
+
+    def inspect_disease_schema(self) -> pd.DataFrame:
+        """
+        Inspect the schema of the disease table.
+        
+        Returns:
+            DataFrame with disease table schema
+        """
+        return self.inspect_table_schema('disease')
+
+    def list_available_tables(self) -> List[str]:
+        """
+        List all available tables in the OpenTargets dataset.
+        
+        Returns:
+            List of table names
+        """
+        logger.info("Listing available tables in OpenTargets dataset")
+        
+        query = f"""
+        SELECT table_name
+        FROM `{self.dataset}.INFORMATION_SCHEMA.TABLES`
+        ORDER BY table_name
+        """
+        
+        try:
+            df = self.client.query(query).to_dataframe()
+            tables = df['table_name'].tolist()
+            logger.info(f"Found {len(tables)} tables: {tables}")
+            return tables
+        except Exception as e:
+            logger.error(f"Failed to list tables: {e}")
+            return []
+
+    def sample_evidence_data(self, limit: int = 10) -> pd.DataFrame:
+        """
+        Sample data from the evidence table to understand the structure.
+        
+        Args:
+            limit: Number of rows to sample
+            
+        Returns:
+            DataFrame with sample evidence data
+        """
+        logger.info(f"Sampling {limit} rows from evidence table")
+        
+        query = f"""
+        SELECT *
+        FROM `{self.dataset}.evidence`
+        LIMIT {limit}
+        """
+        
+        try:
+            df = self.client.query(query).to_dataframe()
+            logger.info(f"Retrieved {len(df)} sample rows from evidence table")
+            return df
+        except Exception as e:
+            logger.error(f"Failed to sample evidence data: {e}")
+            return pd.DataFrame()
+
 
 if __name__ == "__main__":
     # Example usage

@@ -38,26 +38,27 @@ class DrugTargetBuilder:
         """
         logger.info("Building drug-target table with DILIrank data and OpenFDA approval status...")
         
-        # Load drug-target mapping (primary source)
-        mapping_path = self.interim_dir / "drug_target_mapping.parquet"
+        # Load clean drug-target mapping (new source)
+        mapping_path = self.interim_dir / "drug_target_mapping_clean.parquet"
         if not mapping_path.exists():
-            logger.error("Drug-target mapping not found. Run acquisition first.")
+            logger.error("Clean drug-target mapping not found. Run acquisition first.")
             return pd.DataFrame()
         
         drug_target_df = pd.read_parquet(mapping_path)
-        logger.info(f"Loaded {len(drug_target_df)} drug-target mappings")
+        logger.info(f"Loaded {len(drug_target_df)} clean drug-target mappings")
         
-        # Add DILI severity weights
-        severity_weights = {
-            'Most-DILI-Concern': 2.0,
-            'Less-DILI-Concern': 1.0, 
-            'No-DILI-Concern': 0.0,
-            'Ambiguous-DILI-Concern': 0.5
-        }
-        
-        drug_target_df['dili_severity_weight'] = drug_target_df['fda_dili_concern'].map(
-            severity_weights
-        ).fillna(0)
+        # Add DILI severity weights (already included in clean mapping)
+        if 'dili_severity_weight' not in drug_target_df.columns:
+            severity_weights = {
+                'Most-DILI-Concern': 2.0,
+                'Less-DILI-Concern': 1.0, 
+                'No-DILI-Concern': 0.0,
+                'Ambiguous-DILI-Concern': 0.5
+            }
+            
+            drug_target_df['dili_severity_weight'] = drug_target_df['fda_dili_concern'].map(
+                severity_weights
+            ).fillna(0)
         
         # Fetch OpenFDA approval status and merge
         unique_drugs = drug_target_df['fda_drug_name'].dropna().unique().tolist()

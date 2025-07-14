@@ -61,7 +61,7 @@ class Validator:
             return pd.DataFrame()
         
         risk_scores = pd.read_parquet(risk_scores_path)
-        risk_scores = risk_scores.set_index('ot_target_symbol')
+        risk_scores = risk_scores.set_index('target_symbol')
         
         # Compute approval rates
         approval_rates = compute_approval_rates(drug_target_df)

@@ -35,7 +35,7 @@ class RiskCalculator:
         
         # Normalize features to [0,1] range
         features_to_normalize = ['total_dili_weight', 'high_risk_drug_count', 'network_dili_score']
-        
+
         for feature in features_to_normalize:
             if feature in combined_scores.columns:
                 max_val = combined_scores[feature].max()

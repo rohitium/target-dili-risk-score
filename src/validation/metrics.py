@@ -7,14 +7,14 @@ def compute_approval_rates(drug_target_df: pd.DataFrame) -> pd.DataFrame:
     
     # Deduplicate drug-target pairs to match risk scoring process
     drug_target_dedup = drug_target_df.drop_duplicates(
-        subset=['fda_drug_name', 'ot_target_symbol'], 
+        subset=['fda_drug_name', 'target_symbol'], 
         keep='first'
     )
     logger.info(f"Deduplicated from {len(drug_target_df)} to {len(drug_target_dedup)} unique drug-target pairs for validation")
     
     if 'approval_status' not in drug_target_dedup.columns:
         logger.warning("No approval status data available. Using DILI concern as proxy for approval.")
-        approval_stats = drug_target_dedup.groupby('ot_target_symbol').agg({
+        approval_stats = drug_target_dedup.groupby('target_symbol').agg({
             'fda_drug_name': 'count',
             'fda_dili_concern': lambda x: (x == 'No-DILI-Concern').sum()
         }).rename(columns={
@@ -25,7 +25,7 @@ def compute_approval_rates(drug_target_df: pd.DataFrame) -> pd.DataFrame:
             approval_stats['safe_drugs'] / approval_stats['total_drugs']
         ).fillna(0)
     else:
-        approval_stats = drug_target_dedup.groupby('ot_target_symbol').agg({
+        approval_stats = drug_target_dedup.groupby('target_symbol').agg({
             'fda_drug_name': 'count',
             'approval_status': lambda x: (x == 'approved').sum()
         }).rename(columns={
@@ -46,14 +46,14 @@ def compute_withdrawal_rates(drug_target_df: pd.DataFrame) -> pd.DataFrame:
     
     # Deduplicate drug-target pairs to match risk scoring process
     drug_target_dedup = drug_target_df.drop_duplicates(
-        subset=['fda_drug_name', 'ot_target_symbol'], 
+        subset=['fda_drug_name', 'target_symbol'], 
         keep='first'
     )
     
     if 'withdrawn' not in drug_target_dedup.columns:
         logger.warning("No withdrawn status data available. Skipping withdrawal rate computation.")
         return pd.DataFrame()
-    withdrawal_stats = drug_target_dedup.groupby('ot_target_symbol').agg({
+    withdrawal_stats = drug_target_dedup.groupby('target_symbol').agg({
         'fda_drug_name': 'count',
         'withdrawn': 'sum'
     }).rename(columns={

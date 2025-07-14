@@ -49,6 +49,34 @@ class NetworkBuilder:
         if 'implicated_target' in network_df.columns:
             network_df = network_df.rename(columns={'implicated_target': 'target1'})
         
+        # Create mapping from gene symbols to Pathway Commons targets
+        # The risk_targets column contains gene symbols that match OpenTargets targets
+        mapping_data = []
+        
+        for idx, row in network_df.iterrows():
+            pc_target = row['target1']
+            risk_targets_str = row['risk_targets']
+            
+            if pd.notna(risk_targets_str):
+                # Split the semicolon-separated gene symbols
+                gene_symbols = risk_targets_str.split(';')
+                
+                for gene_symbol in gene_symbols:
+                    gene_symbol = gene_symbol.strip()
+                    if gene_symbol:  # Skip empty strings
+                        mapping_data.append({
+                            'pc_target': pc_target,
+                            'gene_symbol': gene_symbol,
+                            'n_risk_targets': row['n_risk_targets']
+                        })
+        
+        # Create mapping DataFrame
+        mapping_df = pd.DataFrame(mapping_data)
+        
+        # Save both the original network and the mapping
+        network_output_path = self.processed_dir / "target_network.parquet"
+        mapping_output_path = self.processed_dir / "target_mapping.parquet"
+        
         # Keep only essential columns for network analysis
         network_cols = ['target1', 'risk_targets', 'n_risk_targets']
         available_cols = [col for col in network_cols if col in network_df.columns]
@@ -56,9 +84,10 @@ class NetworkBuilder:
         if available_cols:
             network_df = network_df[available_cols]
         
-        # Save target network
-        output_path = self.processed_dir / "target_network.parquet"
-        network_df.to_parquet(output_path, index=False)
+        network_df.to_parquet(network_output_path, index=False)
+        mapping_df.to_parquet(mapping_output_path, index=False)
+        
         logger.info(f"Saved target network with {len(network_df)} records")
+        logger.info(f"Saved target mapping with {len(mapping_df)} gene symbol mappings")
         
         return network_df 
