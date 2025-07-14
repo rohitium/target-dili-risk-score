@@ -1,10 +1,20 @@
 """
-Simple feature engineering for Target DILI Risk Score.
+Features module for DILI risk scoring.
 
-This module computes direct DILI evidence and network guilt-by-association
-for each target to create a simple, interpretable risk score.
+This module contains the components for computing DILI risk scores:
+- Direct evidence computation
+- Network guilt-by-association scoring  
+- Risk score calculation and categorization
 """
 
 from .dili_risk_scorer import DILIRiskScorer
+from .direct_evidence import DirectEvidenceComputer
+from .network_scorer import NetworkScorer
+from .risk_calculator import RiskCalculator
 
-__all__ = ['DILIRiskScorer'] 
+__all__ = [
+    'DILIRiskScorer',
+    'DirectEvidenceComputer', 
+    'NetworkScorer',
+    'RiskCalculator'
+] 
