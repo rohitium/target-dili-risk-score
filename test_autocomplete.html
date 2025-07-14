@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocomplete Test</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Autocomplete Test</h2>
+        <div class="input-group mb-3">
+            <input type="text" id="searchInput" class="form-control form-control-lg" 
+                   placeholder="Type to test autocomplete..." autocomplete="off">
+        </div>
+        <div id="autocompleteContainer" class="autocomplete-container" style="display: none;">
+            <div id="autocompleteList" class="autocomplete-list"></div>
+        </div>
+        
+        <div class="mt-4">
+            <h4>Test Instructions:</h4>
+            <ul>
+                <li>Type "CYP" to see CYP targets</li>
+                <li>Type "ACE" to see ACE targets</li>
+                <li>Use arrow keys to navigate</li>
+                <li>Press Enter to select</li>
+                <li>Click outside to close</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Mock data for testing
+        const riskData = [
+            {target_symbol: 'CYP3A4', risk_category: 'Medium'},
+            {target_symbol: 'CYP2D6', risk_category: 'Low'},
+            {target_symbol: 'CYP2C9', risk_category: 'Low'},
+            {target_symbol: 'ACE', risk_category: 'Low'},
+            {target_symbol: 'ACHE', risk_category: 'Low'},
+            {target_symbol: 'ADORA1', risk_category: 'Low'},
+            {target_symbol: 'ADRA1A', risk_category: 'Low'}
+        ];
+
+        let currentAutocompleteIndex = -1;
+        let filteredTargets = [];
+
+        function showAutocomplete(query) {
+            const container = document.getElementById('autocompleteContainer');
+            const list = document.getElementById('autocompleteList');
+            
+            filteredTargets = riskData.filter(target => 
+                target.target_symbol.toLowerCase().includes(query.toLowerCase())
+            );
+            
+            if (filteredTargets.length === 0) {
+                hideAutocomplete();
+                return;
+            }
+            
+            list.innerHTML = '';
+            
+            filteredTargets.forEach((target, index) => {
+                const item = document.createElement('div');
+                item.className = 'autocomplete-item';
+                item.dataset.index = index;
+                
+                const riskClass = target.risk_category.toLowerCase();
+                
+                item.innerHTML = `
+                    <span class="target-symbol">${target.target_symbol}</span>
+                    <span class="risk-category ${riskClass}">${target.risk_category}</span>
+                `;
+                
+                item.addEventListener('click', function() {
+                    selectAutocompleteItem(index);
+                });
+                
+                list.appendChild(item);
+            });
+            
+            container.style.display = 'block';
+            currentAutocompleteIndex = -1;
+        }
+
+        function hideAutocomplete() {
+            const container = document.getElementById('autocompleteContainer');
+            container.style.display = 'none';
+            currentAutocompleteIndex = -1;
+        }
+
+        function selectAutocompleteItem(index) {
+            if (index >= 0 && index < filteredTargets.length) {
+                const target = filteredTargets[index];
+                document.getElementById('searchInput').value = target.target_symbol;
+                hideAutocomplete();
+                alert(`Selected: ${target.target_symbol} (${target.risk_category})`);
+            }
+        }
+
+        function handleAutocompleteNavigation(e) {
+            const container = document.getElementById('autocompleteContainer');
+            const items = container.querySelectorAll('.autocomplete-item');
+            
+            if (container.style.display === 'none') return;
+            
+            switch(e.key) {
+                case 'ArrowDown':
+                    e.preventDefault();
+                    currentAutocompleteIndex = Math.min(currentAutocompleteIndex + 1, items.length - 1);
+                    updateAutocompleteSelection();
+                    break;
+                case 'ArrowUp':
+                    e.preventDefault();
+                    currentAutocompleteIndex = Math.max(currentAutocompleteIndex - 1, -1);
+                    updateAutocompleteSelection();
+                    break;
+                case 'Enter':
+                    if (currentAutocompleteIndex >= 0) {
+                        e.preventDefault();
+                        selectAutocompleteItem(currentAutocompleteIndex);
+                    }
+                    break;
+                case 'Escape':
+                    hideAutocomplete();
+                    break;
+            }
+        }
+
+        function updateAutocompleteSelection() {
+            const items = document.querySelectorAll('.autocomplete-item');
+            
+            items.forEach((item, index) => {
+                if (index === currentAutocompleteIndex) {
+                    item.classList.add('selected');
+                } else {
+                    item.classList.remove('selected');
+                }
+            });
+        }
+
+        // Setup event listeners
+        const searchInput = document.getElementById('searchInput');
+        
+        searchInput.addEventListener('input', function() {
+            const query = this.value.trim();
+            if (query.length >= 1) {
+                showAutocomplete(query);
+            } else {
+                hideAutocomplete();
+            }
+        });
+        
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('#searchInput') && !e.target.closest('#autocompleteContainer')) {
+                hideAutocomplete();
+            }
+        });
+        
+        searchInput.addEventListener('keydown', function(e) {
+            handleAutocompleteNavigation(e);
+        });
+    </script>
+</body>
+</html> 

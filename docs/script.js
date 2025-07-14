@@ -7,15 +7,38 @@ let chart = null;
 document.addEventListener('DOMContentLoaded', function() {
     loadData();
     setupEventListeners();
-    populateDropdown();
 });
 
 function setupEventListeners() {
+    const searchInput = document.getElementById('searchInput');
+    
     // Search on Enter key
-    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+    searchInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
             searchTarget();
         }
+    });
+    
+    // Autocomplete functionality
+    searchInput.addEventListener('input', function() {
+        const query = this.value.trim();
+        if (query.length >= 1) {
+            showAutocomplete(query);
+        } else {
+            hideAutocomplete();
+        }
+    });
+    
+    // Hide autocomplete when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('#searchInput') && !e.target.closest('#autocompleteContainer')) {
+            hideAutocomplete();
+        }
+    });
+    
+    // Handle keyboard navigation
+    searchInput.addEventListener('keydown', function(e) {
+        handleAutocompleteNavigation(e);
     });
 }
 
@@ -180,40 +203,104 @@ function createRiskChart() {
     });
 }
 
-// Populate dropdown with all available targets
-function populateDropdown() {
-    const dropdown = document.getElementById('targetDropdown');
+// Autocomplete functionality
+let currentAutocompleteIndex = -1;
+let filteredTargets = [];
+
+function showAutocomplete(query) {
+    const container = document.getElementById('autocompleteContainer');
+    const list = document.getElementById('autocompleteList');
     
-    // Clear existing options except the first one
-    while (dropdown.children.length > 1) {
-        dropdown.removeChild(dropdown.lastChild);
+    // Filter targets based on query
+    filteredTargets = riskData.filter(target => 
+        target.target_symbol.toLowerCase().includes(query.toLowerCase())
+    ).slice(0, 10); // Limit to 10 results
+    
+    if (filteredTargets.length === 0) {
+        hideAutocomplete();
+        return;
     }
     
-    // Sort targets alphabetically
-    const sortedTargets = riskData
-        .map(t => t.target_symbol)
-        .sort();
+    // Clear and populate list
+    list.innerHTML = '';
     
-    // Add targets to dropdown
-    sortedTargets.forEach(target => {
-        const option = document.createElement('option');
-        option.value = target;
-        option.textContent = target;
-        dropdown.appendChild(option);
+    filteredTargets.forEach((target, index) => {
+        const item = document.createElement('div');
+        item.className = 'autocomplete-item';
+        item.dataset.index = index;
+        
+        const riskClass = target.risk_category.toLowerCase();
+        
+        item.innerHTML = `
+            <span class="target-symbol">${target.target_symbol}</span>
+            <span class="risk-category ${riskClass}">${target.risk_category}</span>
+        `;
+        
+        item.addEventListener('click', function() {
+            selectAutocompleteItem(index);
+        });
+        
+        list.appendChild(item);
     });
     
-    console.log(`Populated dropdown with ${sortedTargets.length} targets`);
+    container.style.display = 'block';
+    currentAutocompleteIndex = -1;
 }
 
-// Handle dropdown selection
-function selectFromDropdown() {
-    const dropdown = document.getElementById('targetDropdown');
-    const selectedTarget = dropdown.value;
-    
-    if (selectedTarget) {
-        document.getElementById('searchInput').value = selectedTarget;
+function hideAutocomplete() {
+    const container = document.getElementById('autocompleteContainer');
+    container.style.display = 'none';
+    currentAutocompleteIndex = -1;
+}
+
+function selectAutocompleteItem(index) {
+    if (index >= 0 && index < filteredTargets.length) {
+        const target = filteredTargets[index];
+        document.getElementById('searchInput').value = target.target_symbol;
+        hideAutocomplete();
         searchTarget();
     }
+}
+
+function handleAutocompleteNavigation(e) {
+    const container = document.getElementById('autocompleteContainer');
+    const items = container.querySelectorAll('.autocomplete-item');
+    
+    if (container.style.display === 'none') return;
+    
+    switch(e.key) {
+        case 'ArrowDown':
+            e.preventDefault();
+            currentAutocompleteIndex = Math.min(currentAutocompleteIndex + 1, items.length - 1);
+            updateAutocompleteSelection();
+            break;
+        case 'ArrowUp':
+            e.preventDefault();
+            currentAutocompleteIndex = Math.max(currentAutocompleteIndex - 1, -1);
+            updateAutocompleteSelection();
+            break;
+        case 'Enter':
+            if (currentAutocompleteIndex >= 0) {
+                e.preventDefault();
+                selectAutocompleteItem(currentAutocompleteIndex);
+            }
+            break;
+        case 'Escape':
+            hideAutocomplete();
+            break;
+    }
+}
+
+function updateAutocompleteSelection() {
+    const items = document.querySelectorAll('.autocomplete-item');
+    
+    items.forEach((item, index) => {
+        if (index === currentAutocompleteIndex) {
+            item.classList.add('selected');
+        } else {
+            item.classList.remove('selected');
+        }
+    });
 }
 
 // Add some sample targets for quick testing
@@ -234,6 +321,7 @@ function addSampleTargets() {
         link.onclick = function(e) {
             e.preventDefault();
             searchInput.value = target;
+            hideAutocomplete(); // Hide autocomplete when using quick search
             searchTarget();
         };
         sampleContainer.appendChild(link);

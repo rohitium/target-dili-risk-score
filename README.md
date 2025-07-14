@@ -13,7 +13,7 @@ A fully automated, biologically informed pipeline for assessing drug target live
 
 **Live Demo**: [DILI Risk Score Checker](https://rohitium.github.io/target-dili-risk-score/)
 
-A beautiful, interactive web app for checking DILI risk scores for any drug target:
+An interactive web app for checking DILI risk scores for any drug target:
 - **Search** any target by symbol (e.g., CYP3A4, ABCB1, SLC22A1)
 - **View** detailed risk scores, categories, and metrics
 - **Explore** interactive charts and visualizations
