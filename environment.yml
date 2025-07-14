@@ -1,0 +1,23 @@
+name: dili-risk-score
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas>=2.0.0
+  - numpy>=1.24.0
+  - scikit-learn>=1.3.0
+  - matplotlib>=3.7.0
+  - requests>=2.31.0
+  - beautifulsoup4>=4.12.0
+  - lxml>=4.9.0
+  - networkx>=3.1
+  - google-cloud-bigquery>=3.11.0
+  - google-auth>=2.22.0
+  - pyyaml>=6.0
+  - tqdm>=4.65.0
+  - pytest>=7.4.0
+  - black>=23.0.0
+  - flake8>=6.0.0
+  - mypy>=1.5.0
+  - pyarrow>=10.0.0 

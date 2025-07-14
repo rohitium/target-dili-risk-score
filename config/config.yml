@@ -1,0 +1,39 @@
+# Configuration file for Target DILI Risk Score pipeline
+
+# Data paths
+data:
+  raw: "data/raw"
+  interim: "data/interim"
+  processed: "data/processed"
+
+# BigQuery configuration
+bigquery:
+  project_id: "target-dili-risk-score"
+  dataset: "bigquery-public-data.open_targets_platform"
+  table_evidence: "evidence"
+  table_targets: "target"
+  table_diseases: "disease"
+
+# API configurations
+apis:
+  pathway_commons:
+    base_url: "https://www.pathwaycommons.org/pc2/"
+    timeout: 30
+  fda:
+    base_url: "https://www.fda.gov"
+    dili_table_url: "https://www.fda.gov/science-research/liver-toxicity-knowledge-base-ltkb/drug-induced-liver-injury-rank-dilirank-dataset"
+    timeout: 30
+
+# Liver injury disease IDs (OpenTargets)
+liver_injury:
+  disease_ids:
+    - "EFO_0004618"  # Liver injury
+    - "EFO_0004619"  # Drug-induced liver injury
+    - "EFO_0004620"  # Hepatotoxicity
+
+# Output settings
+output:
+  save_intermediate: true
+  save_plots: true
+  plot_format: "png"
+  dpi: 300 
