@@ -7,6 +7,7 @@ let chart = null;
 document.addEventListener('DOMContentLoaded', function() {
     loadData();
     setupEventListeners();
+    populateDropdown();
 });
 
 function setupEventListeners() {
@@ -177,6 +178,42 @@ function createRiskChart() {
             }
         }
     });
+}
+
+// Populate dropdown with all available targets
+function populateDropdown() {
+    const dropdown = document.getElementById('targetDropdown');
+    
+    // Clear existing options except the first one
+    while (dropdown.children.length > 1) {
+        dropdown.removeChild(dropdown.lastChild);
+    }
+    
+    // Sort targets alphabetically
+    const sortedTargets = riskData
+        .map(t => t.target_symbol)
+        .sort();
+    
+    // Add targets to dropdown
+    sortedTargets.forEach(target => {
+        const option = document.createElement('option');
+        option.value = target;
+        option.textContent = target;
+        dropdown.appendChild(option);
+    });
+    
+    console.log(`Populated dropdown with ${sortedTargets.length} targets`);
+}
+
+// Handle dropdown selection
+function selectFromDropdown() {
+    const dropdown = document.getElementById('targetDropdown');
+    const selectedTarget = dropdown.value;
+    
+    if (selectedTarget) {
+        document.getElementById('searchInput').value = selectedTarget;
+        searchTarget();
+    }
 }
 
 // Add some sample targets for quick testing

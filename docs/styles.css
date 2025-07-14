@@ -206,4 +206,28 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary-color);
+}
+
+/* Dropdown Styles */
+.form-select {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.form-select option {
+    padding: 8px;
+}
+
+/* Responsive adjustments for dropdown */
+@media (max-width: 768px) {
+    .row .col-md-8,
+    .row .col-md-4 {
+        margin-bottom: 1rem;
+    }
 } 

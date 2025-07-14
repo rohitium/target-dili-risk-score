@@ -28,12 +28,21 @@
                             <i class="fas fa-search me-2"></i>
                             Search for Target
                         </h5>
-                        <div class="input-group mb-3">
-                            <input type="text" id="searchInput" class="form-control form-control-lg" 
-                                   placeholder="Enter target symbol (e.g., CYP3A4, ABCB1, SLC22A1)">
-                            <button class="btn btn-primary btn-lg" type="button" onclick="searchTarget()">
-                                <i class="fas fa-search me-2"></i>Search
-                            </button>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="input-group mb-3">
+                                    <input type="text" id="searchInput" class="form-control form-control-lg" 
+                                           placeholder="Enter target symbol (e.g., CYP3A4, ACE, ACHE)">
+                                    <button class="btn btn-primary btn-lg" type="button" onclick="searchTarget()">
+                                        <i class="fas fa-search me-2"></i>Search
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <select id="targetDropdown" class="form-select form-select-lg" onchange="selectFromDropdown()">
+                                    <option value="">Select from dropdown...</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="text-center">
                             <small class="text-muted">Try: CYP3A4, ACE, ACHE, ADORA1, ADRA1A</small>
