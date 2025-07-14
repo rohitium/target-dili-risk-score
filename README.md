@@ -4,10 +4,10 @@ A fully automated, biologically informed pipeline for assessing drug target live
 
 ## What It Does
 - **Acquires** all required data (OpenTargets, DILIrank, Pathway Commons, OpenFDA)
-- **Builds** unified, deduplicated drug-target and network tables
+- **Builds** clean, deduplicated drug-target mappings with optimized drug name matching
 - **Scores** targets for DILI risk (direct evidence + network guilt-by-association)
-- **Validates** risk scores against drug withdrawal and approval rates
-- **Outputs** clean tables, a validation report, and high-quality plots
+- **Validates** risk scores against drug withdrawal and approval rates with detailed breakdowns
+- **Outputs** clean tables, comprehensive validation reports, and high-quality plots
 
 ## 🌐 Web Application
 
@@ -38,26 +38,33 @@ python main.py
 │   ├── acquisition/        # Data acquisition modules
 │   ├── etl/              # ETL pipeline modules
 │   ├── features/          # Risk scoring modules
-│   └── validation/        # Validation modules
+│   ├── validation/        # Validation modules
+│   └── utils/             # Utility functions (drug matching, etc.)
 ├── docs/                  # Web application files
-├── scripts/               # Utility scripts
+├── scripts/               # Utility and test scripts
 ├── data/                  # Data files (raw, interim, processed)
 ├── results/               # Output plots and reports
 └── config/                # Configuration files
 ```
 
 ## Outputs
-- `data/processed/drug_target_table.parquet` — Deduplicated drug-target associations with DILI and approval/withdrawal data
-- `data/processed/dili_risk_scores.parquet` — Final risk scores and categories
+- `data/processed/drug_target_table.parquet` — Clean, deduplicated drug-target associations with DILI and approval/withdrawal data
+- `data/processed/dili_risk_scores.parquet` — Final risk scores and categories with direct/network subscores
 - `data/processed/validation_results.parquet` — Validation metrics
-- `results/validation_report.txt` — Summary report (correlations, risk categories, top targets)
+- `results/validation_report.txt` — Comprehensive report with top 10 targets breakdown
 - `results/risk_vs_withdrawal.png` — Withdrawal rate vs. DILI risk score plot
-- `results/risk_vs_approval.png` — Approval rate vs. DILI risk score plot (secondary)
+- `results/risk_vs_approval.png` — Approval rate vs. DILI risk score plot
+
+## Key Features
+- **Optimized Drug Matching**: Fast, parallel drug name matching with exact and fuzzy matching
+- **Clean Data Pipeline**: Deduplicated drug-target mappings with proper normalization
+- **Enhanced Validation**: Detailed breakdown of direct vs. network evidence for top targets
+- **Comprehensive Logging**: Full pipeline logging with progress tracking
 
 ## Rationale
 - **Direct DILI evidence:** Targets with more high-risk drugs (from FDA DILIrank) are scored higher
 - **Network guilt-by-association:** Targets connected to high-risk neighbors (from Pathway Commons) are upweighted
-- **Validation:** Risk scores are validated against drug withdrawal/approval rates
+- **Validation:** Risk scores are validated against drug withdrawal/approval rates with detailed metrics
 
 ## Configuration
 Edit `config/config.yml` for:

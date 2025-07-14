@@ -23,7 +23,7 @@ def convert_data():
     data = []
     for _, row in df.iterrows():
         data.append({
-            'target_symbol': row['ot_target_symbol'],
+            'target_symbol': row['target_symbol'],
             'drug_count': int(row['drug_count']),
             'total_dili_weight': float(row['total_dili_weight']),
             'high_risk_drug_count': int(row['high_risk_drug_count']) if pd.notna(row['high_risk_drug_count']) else 0,
