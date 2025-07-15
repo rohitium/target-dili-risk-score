@@ -29,7 +29,7 @@ def convert_data():
             'high_risk_drug_count': int(row['high_risk_drug_count']) if pd.notna(row['high_risk_drug_count']) else 0,
             'dili_risk_ratio': float(row['dili_risk_ratio']),
             'avg_dili_weight': float(row['avg_dili_weight']),
-            'network_dili_score': float(row['network_dili_score']),
+            'network_dili_score': float(row.get('network_dili_score_normalized', row['network_dili_score'])),
             'dili_risk_score': float(row['dili_risk_score']),
             'risk_category': row['risk_category']
         })
