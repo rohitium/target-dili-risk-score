@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Web App Test</h1>
+    <div id="testResults"></div>
+    
+    <script>
+        // Test if Chart.js is loaded
+        if (typeof Chart !== 'undefined') {
+            document.getElementById('testResults').innerHTML += '<p style="color: green;">✓ Chart.js loaded successfully</p>';
+        } else {
+            document.getElementById('testResults').innerHTML += '<p style="color: red;">✗ Chart.js failed to load</p>';
+        }
+        
+        // Test if data.json is accessible
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('testResults').innerHTML += `<p style="color: green;">✓ Data loaded successfully (${data.length} targets)</p>`;
+                
+                // Test score distribution calculation
+                const scores = data.map(t => t.dili_risk_score).sort((a, b) => a - b);
+                const lowThreshold = scores[Math.floor(scores.length * 0.33)];
+                const mediumThreshold = scores[Math.floor(scores.length * 0.66)];
+                
+                document.getElementById('testResults').innerHTML += `<p style="color: green;">✓ Score distribution calculated: Low ≤ ${(lowThreshold * 100).toFixed(1)}%, Medium ≤ ${(mediumThreshold * 100).toFixed(1)}%, High > ${(mediumThreshold * 100).toFixed(1)}%</p>`;
+                
+                // Test finding a specific target
+                const testTarget = data.find(t => t.target_symbol === 'OPRD1');
+                if (testTarget) {
+                    document.getElementById('testResults').innerHTML += `<p style="color: green;">✓ Found test target OPRD1: Score ${(testTarget.dili_risk_score * 100).toFixed(1)}%, Category ${testTarget.risk_category}</p>`;
+                } else {
+                    document.getElementById('testResults').innerHTML += '<p style="color: red;">✗ Test target OPRD1 not found</p>';
+                }
+            })
+            .catch(error => {
+                document.getElementById('testResults').innerHTML += `<p style="color: red;">✗ Failed to load data: ${error.message}</p>`;
+            });
+    </script>
+</body>
+</html> 

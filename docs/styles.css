@@ -281,4 +281,48 @@ body {
 /* Hide autocomplete when not needed */
 .autocomplete-container.hidden {
     display: none !important;
+}
+
+/* Score Distribution Chart Styles */
+#scoreDistributionChart {
+    max-height: 300px;
+}
+
+.score-info {
+    padding: 1rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 10px;
+    height: 100%;
+}
+
+.threshold-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.threshold-item .badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+}
+
+.current-target-info {
+    margin-top: 1rem;
+}
+
+.target-marker {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.target-marker i {
+    font-size: 1.2rem;
 } 

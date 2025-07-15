@@ -45,63 +45,46 @@
 
         <!-- Results Section -->
         <div id="resultsSection" class="mt-4" style="display: none;">
-            <!-- Target Info Card -->
+            <!-- Target Info & Risk Score Card -->
             <div class="row justify-content-center mb-4">
                 <div class="col-lg-8">
                     <div class="card shadow-lg">
                         <div class="card-header bg-primary text-white">
                             <h5 class="mb-0">
                                 <i class="fas fa-info-circle me-2"></i>
-                                Target Information
-                            </h5>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h6 class="text-muted">Target Symbol</h6>
-                                    <h4 id="targetSymbol" class="text-primary"></h4>
-                                </div>
-                                <div class="col-md-6">
-                                    <h6 class="text-muted">Risk Category</h6>
-                                    <span id="riskCategory" class="badge fs-6"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Risk Score Card -->
-            <div class="row justify-content-center mb-4">
-                <div class="col-lg-8">
-                    <div class="card shadow-lg">
-                        <div class="card-header bg-success text-white">
-                            <h5 class="mb-0">
-                                <i class="fas fa-chart-line me-2"></i>
-                                DILI Risk Score
+                                Target Information & Risk Assessment
                             </h5>
                         </div>
                         <div class="card-body">
                             <div class="row align-items-center">
-                                <div class="col-md-4 text-center">
+                                <div class="col-md-3">
+                                    <h6 class="text-muted">Target Symbol</h6>
+                                    <h4 id="targetSymbol" class="text-primary"></h4>
+                                </div>
+                                <div class="col-md-3">
+                                    <h6 class="text-muted">Risk Category</h6>
+                                    <span id="riskCategory" class="badge fs-6"></span>
+                                </div>
+                                <div class="col-md-3 text-center">
                                     <div class="risk-score-circle">
                                         <span id="riskScoreValue" class="risk-score-text"></span>
                                     </div>
-                                    <p class="text-muted mt-2">Risk Score (0-1)</p>
+                                    <p class="text-muted mt-2">Risk Score</p>
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="progress mb-3" style="height: 25px;">
+                                <div class="col-md-3">
+                                    <h6 class="text-muted">Risk Level</h6>
+                                    <div class="progress mb-2" style="height: 20px;">
                                         <div id="riskScoreBar" class="progress-bar" role="progressbar"></div>
                                     </div>
                                     <div class="row text-center">
                                         <div class="col-4">
-                                            <small class="text-muted">Low Risk</small>
+                                            <small class="text-muted">Low</small>
                                         </div>
                                         <div class="col-4">
-                                            <small class="text-muted">Medium Risk</small>
+                                            <small class="text-muted">Medium</small>
                                         </div>
                                         <div class="col-4">
-                                            <small class="text-muted">High Risk</small>
+                                            <small class="text-muted">High</small>
                                         </div>
                                     </div>
                                 </div>
@@ -160,22 +143,74 @@
                 </div>
             </div>
 
-            <!-- Visualization -->
+            <!-- Score Distribution -->
             <div class="row justify-content-center mb-4">
                 <div class="col-lg-8">
                     <div class="card shadow-lg">
                         <div class="card-header bg-secondary text-white">
                             <h5 class="mb-0">
-                                <i class="fas fa-chart-pie me-2"></i>
-                                Risk Distribution
+                                <i class="fas fa-chart-bar me-2"></i>
+                                Score Distribution & Category Assignment
                             </h5>
                         </div>
                         <div class="card-body">
-                            <canvas id="riskChart" width="400" height="200"></canvas>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <canvas id="scoreDistributionChart" width="400" height="200"></canvas>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="score-info">
+                                        <h6 class="text-muted mb-3">Category Thresholds</h6>
+                                        <div class="threshold-item mb-2">
+                                            <span class="badge bg-success me-2">Low</span>
+                                            <small class="text-muted">Score ≤ <span id="lowThreshold">-</span></small>
+                                        </div>
+                                        <div class="threshold-item mb-2">
+                                            <span class="badge bg-warning me-2">Medium</span>
+                                            <small class="text-muted">Score ≤ <span id="mediumThreshold">-</span></small>
+                                        </div>
+                                        <div class="threshold-item mb-2">
+                                            <span class="badge bg-danger me-2">High</span>
+                                            <small class="text-muted">Score > <span id="highThreshold">-</span></small>
+                                        </div>
+                                        <hr class="my-3">
+                                        <div class="current-target-info">
+                                            <h6 class="text-muted mb-2">Current Target</h6>
+                                            <div class="target-marker">
+                                                <i class="fas fa-arrow-right text-primary"></i>
+                                                <span id="currentTargetPosition" class="text-primary fw-bold">-</span>
+                                            </div>
+                                        </div>
+                                        <hr class="my-3">
+                                        <div class="explanation">
+                                            <h6 class="text-muted mb-2">How Categories Work</h6>
+                                            <small class="text-muted">
+                                                Risk categories are assigned based on relative score distribution across all targets. 
+                                                The 33rd and 66th percentiles divide targets into Low, Medium, and High risk groups.
+                                                This means a target with a seemingly low absolute score (like 10.3%) can still be 
+                                                classified as "High" if it's in the top third of all targets.
+                                            </small>
+                                            <hr class="my-2">
+                                            <small class="text-muted">
+                                                <strong>Note:</strong> The progress bar shows the risk category position (Low/Medium/High), 
+                                                while the histogram uses non-uniform binning to better display the skewed distribution.
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="score-info">
+                                        <h6 class="text-muted mb-3">Category Distribution</h6>
+                                        <canvas id="riskChart" width="200" height="200"></canvas>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
 
         <!-- Not Found Section -->
